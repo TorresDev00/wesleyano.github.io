@@ -795,9 +795,47 @@ section {
 # Modal
 --------------------------------------------------------------*/
 
-.no-border-bottom {
-  border-bottom: none !important;
-}
+ .no-border-bottom {
+    border-bottom: none !important;
+  }
+
+  .modal-body {
+    padding: 20px;
+  }
+
+  .custom-section {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: #f2f2f2;
+    border-radius: 2vw;
+    text-align: center;
+    width: 80%;
+  }
+
+  .custom-section img {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0 0 2vw 2vw;
+  }
+
+  .custom-section > * {
+    margin-bottom: 20px;
+  }
+
+  .custom-img {
+    border-radius: 0 0 2vw 2vw;
+  }
+
+  .title{
+    margin-top: 10%;
+    margin-left: 10%;
+  }
 
 
 /*--------------------------------------------------------------
