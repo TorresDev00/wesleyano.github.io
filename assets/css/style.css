@@ -590,6 +590,14 @@ section {
   margin-bottom: 30px;
 }
 
+.about_1 p , .about_2 p , .about_3 p{
+  text-align: justify;
+}
+
+.about .vision{
+  font-size: 50px;
+}
+
 .about .content .about-btn {
   display: inline-block;
   background: #2030bb;
@@ -622,13 +630,13 @@ section {
 }
 
 .about .icon-boxes .icon-box h4 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 700;
   margin: 0 0 10px 0;
 }
 
 .about .icon-boxes .icon-box p {
-  font-size: 15px;
+  font-size: 20px;
   color: #848484;
 }
 
@@ -691,6 +699,7 @@ section {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
+  text-align: center;
 }
 
 .services .title a {
@@ -701,6 +710,7 @@ section {
   font-size: 15px;
   line-height: 28px;
   margin-bottom: 0;
+  text-align: justify;
 }
 
 .services .icon-box:hover .title a,
@@ -789,6 +799,20 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  /* Hide navigation buttons on mobile devices */
+  display: none;
+}
+
+/* Show navigation buttons on desktop devices */
+@media (min-width: 768px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: block;
+  }
+}
+
 
 
 /*--------------------------------------------------------------
@@ -813,13 +837,17 @@ section {
     background-color: #f2f2f2;
     border-radius: 2vw;
     text-align: center;
-    width: 80%;
+    width: 75%;
+  }
+
+  .custom-section p{
+    text-align: justify;
   }
 
   .custom-section img {
     margin: 0;
     width: 100%;
-    height: auto;
+    height: 80vh;
     object-fit: cover;
     border-radius: 0 0 2vw 2vw;
   }
@@ -1275,7 +1303,7 @@ section {
 
 .team .member .social a {
   transition: color 0.3s;
-  color: #52869d;
+  color: #0731ba;
 }
 
 .team .member .social a:hover {

@@ -219,9 +219,6 @@
     }
   });
 
-    /**
-   * Pensum slider
-   */
     new Swiper('.pensum', {
       speed: 600,
       loop: true,
@@ -231,10 +228,13 @@
       },
       slidesPerView: 'auto',
       centeredSlides: true, // Centrar los cuadros
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: true
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+       keyboard: {
+      enabled: true,
+      onlyInViewport: true
       },
       breakpoints: {
         320: {
@@ -256,7 +256,7 @@
           spaceBetween: 30
         }
       }
-    });
+    })
 
 
   /**
