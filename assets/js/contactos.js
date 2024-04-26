@@ -38,8 +38,8 @@ $(document).ready(function(){
 			div.text(mensaje + " debe llevar letras")
 			input.addClass('input-error');
 			return false
-		} else if (parametro.length < 4) {
-			div.text(mensaje + " debe introducir mínimo 4 carácteres.")
+		} else if (parametro.length < 3) {
+			div.text(mensaje + " debe introducir mínimo 3 carácteres.")
 			input.addClass('input-error');
 		} else if (!valid) {
 			div.text(mensaje + " carácteres no validos")
@@ -100,28 +100,54 @@ $(document).ready(function(){
 	$("#apellido").keyup(()=> {  validarNombre($("#apellido"),$("#error3") , "Error ,") });
 	$("#telefono").keyup(()=> {  validarTelefono($("#telefono"),$("#error4") , "Error de telefono") });
 	$("#iglesia").keyup(()=> {  validarStringLong($("#iglesia"),$("#error5") , "Error de iglesia") });
+	$("#ciudad").keyup(()=> {  validarStringLong($("#ciudad"),$("#error6") , "Error de ciudad") });
+
+	let name , nombre , lastname , apellido , cell , telefono , iglesia , ciudad;
 
 	$('#registrar').click(function(e) {
 		e.preventDefault();
 
-		let correo =  validarCorreo($("#email"),$("#error1") , "Error de correo,");
-		let name =  validarNombre($("#name"),$("#error2") , "Error,");
-		let lastname =  validarNombre($("#apellido"),$("#error3") , "Error ,");
-		let cell =  validarTelefono($("#telefono"),$("#error4") , "Error de telefono");
-		let iglesia =  validarStringLong($("#iglesia"),$("#error5") , "Error de iglesia");
+		console.log('hola')
 
-		if(correo && name && lastname && cell && iglesia){
-			Swal.fire({
-				title: "Enviado con Exito",
-				text: "Presiona click en el boton!",
-				icon: "success",
-				showConfirmButton: true,
-				confirmButtonText: "OK",
-				customClass: {
-					confirmButton: "btn btn-color"
-				}
-			});
+		 correo =  validarCorreo($("#email"),$("#error1") , "Error de correo,");
+		 name =  validarNombre($("#name"),$("#error2") , "Error,");
+		 lastname =  validarNombre($("#apellido"),$("#error3") , "Error ,");
+		 cell =  validarTelefono($("#telefono"),$("#error4") , "Error de telefono");
+		 iglesia =  validarStringLong($("#iglesia"),$("#error5") , "Error de iglesia");
+		 ciudad = validarStringLong($("#ciudad"),$("#error6") , "Error de ciudad");
 
+		if(correo && name && lastname && cell && iglesia && ciudad){
+			
+
+			email = $("#email").val();
+			nombre = $("#name").val();
+			apellido = $("#apellido").val();
+			telefono = $("#telefono").val();
+			iglesia = $("#iglesia").val();
+			ciudad = $("#ciudad").val();
+
+
+			$.ajax({
+				type: 'POST',
+				url: '../../forms/contact.php',
+				dataType: 'json',
+				data: { 
+
+				},
+				success(data){
+				Swal.fire({
+					title: "Enviado con Exito",
+					text: "Presiona click en el boton!",
+					icon: "success",
+					showConfirmButton: true,
+					confirmButtonText: "OK",
+					customClass: {
+						confirmButton: "btn btn-color"
+					}
+				})
+			  }
+
+			})
 
 		}
 
