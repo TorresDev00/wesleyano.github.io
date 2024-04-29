@@ -24,7 +24,7 @@
         },
         768: {
           slidesPerView: 2, // Mostrar 2 cuadros en pantallas de 768px o menos
-          centeredSlides: true // Centrar los cuadros en pantallas de 768px o menos
+          spaceBetween: 30 // Espacio entre los cuadros
         },
         1024: {
           slidesPerView: 3, // Mostrar 3 cuadros en pantallas de 1200px o más

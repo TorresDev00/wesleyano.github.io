@@ -222,7 +222,7 @@ h6 {
 }
 
  .colorLi a {
-  color: white;
+  color: #fff;
 }
 
 .navbar .dropdown ul {
@@ -503,24 +503,10 @@ section {
   color: #222222;
 }
 
-.section-title h2::before {
-    margin: 0 15px 10px 0;
-}
-
-.section-title h2::after {
-    margin: 0 0 10px 15px;
-}
-
-.section-title h2::before, .section-title h2::after {
-    content: "";
-    width: 50px;
-    height: 2px;
-    background: #2030bb;
-    display: inline-block;
-}
 
 .section-title p {
   margin-bottom: 0;
+  text-align: justify;
 }
 
 /*--------------------------------------------------------------
@@ -610,6 +596,10 @@ section {
 
 .about .content p {
   margin-bottom: 30px;
+}
+
+.about_1 p{
+  font-size: 20px;
 }
 
 .about_1 p , .about_2 p , .about_3 p{
@@ -767,7 +757,6 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .pensum .icon-box-full::before {
@@ -841,50 +830,48 @@ section {
 # Modal
 --------------------------------------------------------------*/
 
- .no-border-bottom {
-    border-bottom: none !important;
-  }
+.no-border-bottom {
+  border-bottom: none !important;
+}
 
-  .modal-body {
-    padding: 20px;
-  }
+.modal-body {
+  padding: 20px;
+}
 
-  .custom-section {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    background-color: #f2f2f2;
-    border-radius: 2vw;
-    text-align: justify;
-    width: 75%;
-  }
+.custom-section {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: #f2f2f2;
+  border-radius: 2vw;
+  text-align: justify;
+  width: 100%; 
+  max-width: 900px;
+  margin-bottom: 20px; 
+}
 
-  .custom-section p{
-    text-align: justify;
-  }
+.custom-section p {
+  text-align: justify;
+}
 
-  .custom-section img {
-    margin: 0;
-    width: 100%;
-    height: 80vh;
-    object-fit: cover;
-    border-radius: 0 0 2vw 2vw;
-  }
+.custom-section img {
+  margin: 0;
+  width: 100%;
+  height: auto; /* Cambiado a auto para mantener la proporción de la imagen */
+  object-fit: cover;
+  border-radius: 0 0 2vw 2vw;
+}
 
-  .custom-section > * {
-    margin-bottom: 20px;
-  }
+.custom-img {
+  border-radius: 0 0 2vw 2vw;
+}
 
-  .custom-img {
-    border-radius: 0 0 2vw 2vw;
-  }
-
-  .title{
-    margin-top: 10%;
-  }
+.title {
+  margin-top: 10%;
+}
 
 
 /*--------------------------------------------------------------
