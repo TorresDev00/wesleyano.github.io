@@ -247,6 +247,98 @@
     }
   });
 
+
+new Swiper('.swiper_1', {
+  direction: 'horizontal', // Desplazamiento hacia la derecha
+  speed: 600,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false
+  },
+  slidesPerView: 'auto',
+  centeredSlides: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 50
+    }
+  }
+});
+
+new Swiper('.swiper_2', {
+  direction: 'horizontal', // Desplazamiento hacia la izquierda
+  rtl: true, // Dirección de derecha a izquierda
+  speed: 600,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false
+  },
+  slidesPerView: 'auto',
+  centeredSlides: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 50
+    }
+  }
+});
+
+new Swiper('.swiper_3', {
+  direction: 'horizontal', // Desplazamiento hacia la derecha
+  speed: 600,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false
+  },
+  slidesPerView: 'auto',
+  centeredSlides: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 50
+    }
+  }
+});
+
   /**
    * Animation on scroll
    */

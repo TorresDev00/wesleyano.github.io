@@ -1,6 +1,6 @@
   document.addEventListener("DOMContentLoaded", function() {
 
-    new Swiper('.pensum', {
+    const swiper = new Swiper('.pensum', {
       speed: 600,
       loop: true,
       autoplay: {
@@ -9,10 +9,6 @@
       },
       slidesPerView: 'auto',
       centeredSlides: true, // Centrar los cuadros
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-      },
        keyboard: {
       enabled: true,
       onlyInViewport: true
@@ -38,6 +34,14 @@
         }
       }
     })
+
+    document.querySelector('.prev').addEventListener('click', function() {
+      swiper.slidePrev();
+    });
+
+    document.querySelector('.next').addEventListener('click', function() {
+      swiper.slideNext();
+    });
 
     
   });

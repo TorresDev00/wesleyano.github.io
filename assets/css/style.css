@@ -483,12 +483,12 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 40px 0;
   overflow: hidden;
 }
 
 .section-bg {
-  background-color: #ababab08;
+  background-color: #9d9d9d0f;
 }
 
 .section-title {
@@ -665,6 +665,101 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Historia Section
+--------------------------------------------------------------*/
+.historia h2 {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: #000;
+  margin: 30px 0;
+}
+
+@media (min-width: 991px) {
+  .historia h2 {
+    max-width: 65%;
+    margin: 0 0 80px 0;
+  }
+}
+
+.historia .our-story {
+  padding: 40px;
+  background-color: #f5f6f7;
+}
+
+@media (min-width: 991px) {
+  .historia .our-story {
+    padding-right: 35%;
+  }
+}
+
+.historia .our-story h4 {
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #838893;
+}
+
+.historia .our-story h3 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.historia .our-story p:last-child {
+  margin-bottom: 0;
+}
+
+.historia ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.historia ul li {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.historia ul i {
+  font-size: 20px;
+  margin-right: 4px;
+  color: #170c66;
+}
+
+.historia .watch-video i {
+  font-size: 32px;
+  transition: 0.3s;
+  color: #170c66;
+}
+
+.historia .watch-video a {
+  font-weight: 600;
+  color: #170c66;
+  margin-left: 8px;
+  transition: 0.3s;
+}
+
+.historia .watch-video:hover a {
+  color: #006d9d;
+}
+
+.historia .historia-img {
+  min-height: 600px;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 992px) {
+  .historia .historia-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+
+/*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
@@ -691,7 +786,7 @@ section {
 }
 
 .services .icon-box:hover::before {
-  background: #67b0d1;
+  background: #170c66 linear-gradient(rgb(32 48 187), rgb(25 18 97));
   top: 0;
   border-radius: 0px;
 }
@@ -733,6 +828,180 @@ section {
 .services .icon-box:hover .icon i {
   color: #fff;
 }
+
+/*--------------------------------------------------------------
+# Nosotros
+--------------------------------------------------------------*/
+
+.nosotros p{
+  text-align: justify;
+  font-size: 15px
+}
+
+
+
+
+.galeria .galeria-carousel,
+.galeria .galeria-slider {
+  overflow: hidden;
+}
+
+.galeria .galeria-carousel,
+.galeria .galeria-slider {
+  overflow: hidden;
+}
+
+/*--------------------------------------------------------------
+# Preguntas Frecuentes - Acordeon
+--------------------------------------------------------------*/
+
+
+.accordion-button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+}
+
+.accordion-button i{
+  color: #2030bb;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #170c66;
+  color: #fff;
+}
+
+.accordion-button:not(.collapsed) i{
+  color: #fff;
+}
+
+.accordion-button:focus {
+  outline: none; /* Elimina el contorno al enfocar el botón */
+  border: none !important; /* Elimina el borde del botón */
+  box-shadow: none !important; /* Elimina la sombra del botón */
+}
+
+.accordion-body {
+  background-color: #fff;
+  border: 1px solid #ccc; /* Añade un borde al cuerpo del acordeón */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade una sombra al cuerpo del acordeón */
+}
+
+.preguntas img{
+  max-width: 100%;
+}
+
+@media (max-width: 320px) and (max-width: 435px)  {
+  .preguntas img {
+    height:50vh; /* Ajusta el tamaño de la imagen para 320px */
+  }
+}
+
+/* Tamaño de pantalla 780px */
+@media (min-width: 436px) and (max-width: 780px) {
+  .preguntas img {
+    height:65vh; /* Ajusta el tamaño de la imagen para 320px */
+  }
+}
+
+/* Tamaño de pantalla 1024px */
+@media (min-width: 781px) and (max-width: 1024px) {
+  .preguntas img {
+    height:70vh; /* Ajusta el tamaño de la imagen para 320px */
+  }
+}
+
+/* Tamaño de pantalla 1440px */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .preguntas img {
+    height:80vh; /* Ajusta el tamaño de la imagen para 320px */
+  }
+}
+
+/*--------------------------------------------------------------
+# Preguntas Frecuentes - Acordeon
+--------------------------------------------------------------*/
+
+.nav-tabs{
+  border-bottom: none !important;
+}
+
+.features .nav-link {
+  border: 0;
+  padding: 25px 20px;
+  color: #2030bb;
+  box-shadow: 5px 5px 25px rgb(0 0 0 / 15%);
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0s;
+  cursor: pointer;
+  height: 100%;
+  margin-bottom: 20px; /* Add margin between buttons */
+}
+
+.features .nav-link i {
+  font-size: 32px;
+  line-height: 0;
+}
+
+.features .nav-link h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px 0 0 0;
+  color: #2030bb
+}
+
+.features .nav-link:hover {
+  color: #170c66
+}
+
+.features .nav-link.active {
+  transition: 0.3s;
+  background: #170c66 linear-gradient(rgb(32 48 187), rgb(25 18 97));
+  border-color: #000000;
+}
+
+.features .nav-link.active h4 {
+  color: #FFFFFF; /* White */
+}
+
+.features .nav-link.active i {
+  color: #FFFFFF !important;
+}
+
+.features p{
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .features .nav-item {
+    margin: 0 !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Logos
+--------------------------------------------------------------*/
+
+.logos img {
+  width: 100%;
+  filter: grayscale(100);
+  transition: all 0.4s ease-in-out;
+  display: inline-block;
+  height: 15vh;
+  padding: 10px;
+  object-fit: contain;
+}
+
+.logos img:hover {
+  filter: none;
+  transform: scale(1.1);
+}
+
+
 
 /*--------------------------------------------------------------
 # Pensum
@@ -810,19 +1079,6 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-  /* Hide navigation buttons on mobile devices */
-  display: none;
-}
-
-/* Show navigation buttons on desktop devices */
-@media (min-width: 768px) {
-  .swiper-button-prev,
-  .swiper-button-next {
-    display: block;
-  }
-}
 
 
 
@@ -851,6 +1107,10 @@ section {
   width: 100%; 
   max-width: 900px;
   margin-bottom: 20px; 
+}
+
+.custom-section h2{
+  font-size: 30px;
 }
 
 .custom-section p {
@@ -1525,24 +1785,6 @@ section {
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-}
-
-#footer .footer-top .footer-info {
-  margin-top: -90px;
-  margin-bottom: 15px;
-  background: white;
-  color: #2f4d5a;
-  border-top: 4px solid #67b0d1;
-  text-align: center;
-  padding: 30px 20px;
-}
-
-#footer .footer-top .footer-info h3 {
-  font-size: 24px;
-  margin: 0 0 20px 0;
-  padding: 2px 0 2px 0;
-  line-height: 1;
-  font-weight: 700;
 }
 
 #footer .footer-top .footer-info p {
