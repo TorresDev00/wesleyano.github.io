@@ -9,10 +9,11 @@
       },
       slidesPerView: 'auto',
       centeredSlides: true, // Centrar los cuadros
-       keyboard: {
+      keyboard: {
       enabled: true,
       onlyInViewport: true
       },
+      grabCursor: true,
       breakpoints: {
         320: {
           slidesPerView: 1,

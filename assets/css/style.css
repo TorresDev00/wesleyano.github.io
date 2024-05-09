@@ -1079,6 +1079,11 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
+/*--------------------------------------------------------------
+# Programas Aliados
+--------------------------------------------------------------*/
+
+
 
 
 
@@ -1131,6 +1136,12 @@ section {
 
 .title {
   margin-top: 10%;
+}
+
+@media (max-width: 575.98px) {
+  .xs-0{
+    margin: 0 !important;
+  }
 }
 
 
@@ -1777,11 +1788,24 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #170c66;
   padding: 0 0 30px 0;
-  color: #fff;
   font-size: 14px;
 }
+
+.footer-blue {
+  background: #170c66;
+  color: #fff;
+}
+
+.footer-yellow {
+  background: #e29505 linear-gradient(rgb(225 152 3), rgb(249 181 22), rgb(217 142 6));
+  color: #fff;
+}
+
+.footer-red {
+  background: #e74c3c;
+}
+
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
@@ -1812,6 +1836,12 @@ section {
 #footer .footer-top .social-links a:hover {
   background: #67b0d1;
   color: #fff;
+  text-decoration: none;
+}
+
+.footer-yellou .footer-top .social-links a:hover {
+  background: #67b0d1;
+  color: #6b6767;
   text-decoration: none;
 }
 
@@ -1857,8 +1887,12 @@ section {
   line-height: 1;
 }
 
-#footer .footer-top .footer-links ul a:hover {
-  color: #a2cfe3;
+.footer-blue .footer-top .footer-links ul a:hover {
+  color: #a2cfe3 !important;
+}
+
+.footer-yellow .footer-top .footer-links ul a:hover {
+  color: #676c6f !important;
 }
 
 #footer .copyright {
