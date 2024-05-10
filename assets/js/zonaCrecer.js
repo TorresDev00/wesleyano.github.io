@@ -138,7 +138,6 @@ $(document).ready(function() {
    });
 
 
-
   /**
    * Animation on scroll
    */
@@ -150,11 +149,11 @@ $(document).ready(function() {
    	easing: 'ease-in-out',
    	onEnter: function() {
       // Mostrar contenido al pasar el mouse por encima
-  },
-  onLeave: function() {
+    },
+    onLeave: function() {
       // Esconder contenido al alejarse
-  }
-});
+    }
+  });
 
 
 });

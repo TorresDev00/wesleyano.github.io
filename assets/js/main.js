@@ -100,6 +100,97 @@
     window.addEventListener('scroll', headerScrolled);
   }
 
+
+    // Animacion cambio fondo
+
+    let showingDivTitle = false;
+
+  document.getElementById("excelencia").addEventListener("click", function() {
+  const excelencia = document.querySelector('#excelencia');
+
+  if (excelencia) {
+    let divTitle = `<div class="icon-box-white h-100">
+    <h4 class="title mt-2 py-5 fs-3"><a>Excelencia</a></h4>
+    </div>`;
+
+    let divInfo = `<div class="icon-box-yellow h-100">
+    <div class="icon text-center mt-3"><i class="bi bi-award"></i></div>
+    <p class="description">Búsqueda constante de calidad y alto rendimiento en todas las áreas.</p>
+    </div>`;
+
+    excelencia.classList.add('transition');
+
+    excelencia.style.opacity = 0;
+
+    setTimeout(() => {
+      if (showingDivTitle) {
+        excelencia.innerHTML = divInfo;
+      } else {
+        excelencia.innerHTML = divTitle;
+      }
+      excelencia.style.opacity = 1;
+    }, 500); // Ajusta el tiempo de retraso según tus necesidades
+
+    showingDivTitle = !showingDivTitle; // Alternar el estado
+  } else {
+    console.error('No se encontró ningún elemento con el ID "excelencia"');
+  }
+});
+
+
+
+
+      document.getElementById("excelencia_1").addEventListener("click", function() {
+        var div = document.getElementById("excelencia_1");
+        div.style.display = "none";
+        var div_1 = document.getElementById("excelencia");
+        div_1.style.display = "block";
+      });
+
+        document.getElementById("santidad").addEventListener("click", function() {
+        var div = document.getElementById("santidad");
+        div.style.display = "none";
+        var div = document.getElementById("santidad_1");
+        div.style.display = "block";
+        setTimeout(function() {
+          div.classList.add("visible");
+        }, 50); // Pequeño retraso para permitir que el navegador reconozca el cambio de display antes de iniciar la transición de opacidad
+      });
+
+      document.getElementById("santidad_1").addEventListener("click", function() {
+        var div = document.getElementById("santidad_1");
+        div.style.display = "none";
+        var div = document.getElementById("santidad");
+        div.style.display = "block";
+        setTimeout(function() {
+          div.classList.add("visible");
+        }, 50); // Pequeño retraso para permitir que el navegador reconozca el cambio de display antes de iniciar la transición de opacidad
+      });
+
+      document.getElementById("vidaEspiritu").addEventListener("click", function() {
+        var div = document.getElementById("vidaEspiritu");
+        div.style.display = "none";
+        var div = document.getElementById("vidaEspiritu_1");
+        div.style.display = "block";
+        setTimeout(function() {
+          div.classList.add("visible");
+        }, 50); // Pequeño retraso para permitir que el navegador reconozca el cambio de display antes de iniciar la transición de opacidad
+      });
+
+      document.getElementById("vidaEspiritu_1").addEventListener("click", function() {
+        var div = document.getElementById("vidaEspiritu_1");
+        div.style.display = "none";
+        var div = document.getElementById("vidaEspiritu");
+        div.style.display = "block";
+        setTimeout(function() {
+          div.classList.add("visible");
+        }, 50); // Pequeño retraso para permitir que el navegador reconozca el cambio de display antes de iniciar la transición de opacidad
+      });
+
+
+
+
+
   /**
    * Back to top button
    */

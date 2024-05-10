@@ -144,7 +144,7 @@ $('#registrar').click(function(e) {
 
         $.ajax({
             type: 'POST',
-            url: 'http://localhost/wesleyano.github.io/forms/contact.php',
+            url: window.location.origin + '/wesleyano.github.io/forms/contact.php',
             dataType: 'json',
             data: {
                 email,
