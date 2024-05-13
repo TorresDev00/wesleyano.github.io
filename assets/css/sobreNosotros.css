@@ -44,6 +44,18 @@ a {
     color: #fff;
 }
 
+.mobile-nav-toggle {
+    color: #fff;
+}
+
+.navbar-mobile ul {
+    background-color: #000;
+}
+
+.navbar-mobile {
+    background: #323233;
+}
+
 /*--------------------------------------------------------------
 # breadcrumbs
 --------------------------------------------------------------*/
