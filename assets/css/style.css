@@ -699,14 +699,12 @@ section {
 .historia .our-story h4 {
   text-transform: uppercase;
   font-size: 18px;
-  color: #838893;
 }
 
 .historia .our-story h3 {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 20px;
-  color: #000;
 }
 
 .historia .our-story p:last-child {
@@ -727,19 +725,16 @@ section {
 
 .historia ul i {
   font-size: 20px;
-  margin-right: 4px;
-  color: #170c66;
+  margin-right: 10px;
 }
 
 .historia .watch-video i {
   font-size: 32px;
   transition: 0.3s;
-  color: #170c66;
 }
 
 .historia .watch-video a {
   font-weight: 600;
-  color: #170c66;
   margin-left: 8px;
   transition: 0.3s;
 }
@@ -821,9 +816,8 @@ section {
 }
 
 .transition {
-  transition: height 0.3s ease-in-out, opacity 0.5s ease-in-out;
+  transition: height 0.1s ease-in-out, opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
-
 
 /*.services .icon-box:hover::before {
   background: #170c66 linear-gradient(rgb(32 48 187), rgb(25 18 97));
@@ -930,38 +924,6 @@ section {
 # Preguntas Frecuentes - Acordeon
 --------------------------------------------------------------*/
 
-
-.accordion-button {
-  background-color: #fff;
-  color: #000;
-  border: none;
-}
-
-.accordion-button i{
-  color: #2030bb;
-}
-
-.accordion-button:not(.collapsed) {
-  background-color: #170c66;
-  color: #fff;
-}
-
-.accordion-button:not(.collapsed) i{
-  color: #fff;
-}
-
-.accordion-button:focus {
-  outline: none; /* Elimina el contorno al enfocar el botón */
-  border: none !important; /* Elimina el borde del botón */
-  box-shadow: none !important; /* Elimina la sombra del botón */
-}
-
-.accordion-body {
-  background-color: #fff;
-  border: 1px solid #ccc; /* Añade un borde al cuerpo del acordeón */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade una sombra al cuerpo del acordeón */
-}
-
 .preguntas img{
   max-width: 100%;
 }
@@ -1004,7 +966,6 @@ section {
 .features .nav-link {
   border: 0;
   padding: 25px 20px;
-  color: #2030bb;
   box-shadow: 5px 5px 25px rgb(0 0 0 / 15%);
   border-radius: 0;
   display: flex;

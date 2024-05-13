@@ -105,89 +105,109 @@
 
     let showingDivTitle = false;
 
-  document.getElementById("excelencia").addEventListener("click", function() {
-  const excelencia = document.querySelector('#excelencia');
+    document.getElementById("excelencia").addEventListener("click", function() {
+      const excelencia = document.querySelector('#excelencia');
 
-  if (excelencia) {
-    let divTitle = `<div class="icon-box-white h-100">
-    <h4 class="title mt-2 py-5 fs-3"><a>Excelencia</a></h4>
-    </div>`;
+      if (excelencia) {
+        let divTitle = `<div class="icon-box-white h-100">
+        <h4 class="title mt-2 py-5 fs-3" data-aos="fade-up" data-aos-delay="200"><a>Excelencia</a></h4>
+        </div>`;
 
-    let divInfo = `<div class="icon-box-yellow h-100">
-    <div class="icon text-center mt-3"><i class="bi bi-award"></i></div>
-    <p class="description">Búsqueda constante de calidad y alto rendimiento en todas las áreas.</p>
-    </div>`;
+        let divInfo = `<div class="icon-box-yellow h-100">
+        <p class="description py-4" data-aos="fade-up" data-aos-delay="100" >Educación cristiana para formar una generación relevante y eficaz en la propagación del evangelio.</p>
+        </div>`;
 
-    excelencia.classList.add('transition');
+        excelencia.classList.add('transition');
 
-    excelencia.style.opacity = 0;
+        excelencia.style.opacity = 0;
+        excelencia.style.visibility = 'hidden';
 
-    setTimeout(() => {
-      if (showingDivTitle) {
-        excelencia.innerHTML = divInfo;
+        setTimeout(() => {
+          if (showingDivTitle) {
+            excelencia.innerHTML = divInfo;
+          } else {
+            excelencia.innerHTML = divTitle;
+          }
+          excelencia.style.opacity = 1;
+          excelencia.style.visibility = 'visible';
+        }, 500); // Ajusta el tiempo de retraso según tus necesidades
+
+        showingDivTitle = !showingDivTitle; // Alternar el estado
       } else {
-        excelencia.innerHTML = divTitle;
+        console.error('No se encontró ningún elemento con el ID "excelencia"');
       }
-      excelencia.style.opacity = 1;
-    }, 500); // Ajusta el tiempo de retraso según tus necesidades
-
-    showingDivTitle = !showingDivTitle; // Alternar el estado
-  } else {
-    console.error('No se encontró ningún elemento con el ID "excelencia"');
-  }
-});
+    });
 
 
+      let showingDivTitle1 = false;
 
+      document.getElementById("santidad").addEventListener("click", function() {
+        const santidad = document.querySelector('#santidad');
 
-      document.getElementById("excelencia_1").addEventListener("click", function() {
-        var div = document.getElementById("excelencia_1");
-        div.style.display = "none";
-        var div_1 = document.getElementById("excelencia");
-        div_1.style.display = "block";
-      });
+        if (santidad) {
+          let divTitle = `<div class="icon-box-black h-100">
+          <h4 class="title mt-2 py-5 fs-3" data-aos="fade-up" data-aos-delay="200"><a>Santidad</a></h4>
+          </div>`;
 
-        document.getElementById("santidad").addEventListener("click", function() {
-        var div = document.getElementById("santidad");
-        div.style.display = "none";
-        var div = document.getElementById("santidad_1");
-        div.style.display = "block";
-        setTimeout(function() {
-          div.classList.add("visible");
-        }, 50); // Pequeño retraso para permitir que el navegador reconozca el cambio de display antes de iniciar la transición de opacidad
-      });
+          let divInfo = `<div class="icon-box-white h-100">
+          <p class="description py-3" data-aos="fade-up" data-aos-delay="100"> Un estilo de vida que erradica el pecado, con una integridad para la manifestación de un evangelio genuino</p>
+          </div>`;
 
-      document.getElementById("santidad_1").addEventListener("click", function() {
-        var div = document.getElementById("santidad_1");
-        div.style.display = "none";
-        var div = document.getElementById("santidad");
-        div.style.display = "block";
-        setTimeout(function() {
-          div.classList.add("visible");
-        }, 50); // Pequeño retraso para permitir que el navegador reconozca el cambio de display antes de iniciar la transición de opacidad
-      });
+          santidad.classList.add('transition');
+
+          santidad.style.opacity = 0;
+          santidad.style.visibility = 'hidden';
+
+          setTimeout(() => {
+            if (showingDivTitle1) {
+              santidad.innerHTML = divInfo;
+            } else {
+              santidad.innerHTML = divTitle;
+            }
+            santidad.style.opacity = 1;
+            santidad.style.visibility = 'visible';
+      }, 500); // Ajusta el tiempo de retraso según tus necesidades
+
+      showingDivTitle1 = !showingDivTitle1; // Alternar el estado
+    } else {
+      console.error('No se encontró ningún elemento con el ID "santidad"');
+    }
+  });
+
+      let showingDivTitle2 = false;
 
       document.getElementById("vidaEspiritu").addEventListener("click", function() {
-        var div = document.getElementById("vidaEspiritu");
-        div.style.display = "none";
-        var div = document.getElementById("vidaEspiritu_1");
-        div.style.display = "block";
-        setTimeout(function() {
-          div.classList.add("visible");
-        }, 50); // Pequeño retraso para permitir que el navegador reconozca el cambio de display antes de iniciar la transición de opacidad
-      });
+        const vidaEspiritu = document.querySelector('#vidaEspiritu');
 
-      document.getElementById("vidaEspiritu_1").addEventListener("click", function() {
-        var div = document.getElementById("vidaEspiritu_1");
-        div.style.display = "none";
-        var div = document.getElementById("vidaEspiritu");
-        div.style.display = "block";
-        setTimeout(function() {
-          div.classList.add("visible");
-        }, 50); // Pequeño retraso para permitir que el navegador reconozca el cambio de display antes de iniciar la transición de opacidad
-      });
+        if (vidaEspiritu) {
+          let divTitle = `<div class="icon-box-white h-100">
+          <h4 class="title mt-2 py-5 fs-3" data-aos="fade-up" data-aos-delay="200"><a>Vida en el Espíritu</a></h4>
+          </div>`;
 
+          let divInfo = `<div class="icon-box h-100">
+          <p class="description py-4" data-aos="fade-up" data-aos-delay="100">Apasionados por una intimidad ferviente y una adoración transformadora.</p>
+          </div>`;
 
+          vidaEspiritu.classList.add('transition');
+
+          vidaEspiritu.style.opacity = 0;
+          vidaEspiritu.style.visibility = 'hidden';
+
+          setTimeout(() => {
+            if (showingDivTitle2) {
+              vidaEspiritu.innerHTML = divInfo;
+            } else {
+              vidaEspiritu.innerHTML = divTitle;
+            }
+            vidaEspiritu.style.opacity = 1;
+            vidaEspiritu.style.visibility = 'visible';
+      }, 500); // Ajusta el tiempo de retraso según tus necesidades
+
+      showingDivTitle2 = !showingDivTitle2; // Alternar el estado
+    } else {
+      console.error('No se encontró ningún elemento con el ID "vidaEspiritu"');
+    }
+  });
 
 
 
@@ -370,8 +390,7 @@ new Swiper('.swiper_1', {
 });
 
 new Swiper('.swiper_2', {
-  direction: 'horizontal', // Desplazamiento hacia la izquierda
-  rtl: true, // Dirección de derecha a izquierda
+  direction: 'horizontal', // Desplazamiento horizontal
   speed: 600,
   loop: true,
   autoplay: {
@@ -399,6 +418,7 @@ new Swiper('.swiper_2', {
     }
   }
 });
+
 
 new Swiper('.swiper_3', {
   direction: 'horizontal', // Desplazamiento hacia la derecha
