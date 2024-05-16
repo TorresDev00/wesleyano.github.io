@@ -5,7 +5,8 @@
 --------------------------------------------------------------*/
 
 body {
-    background: #000;
+    background: #fff;
+    transition: background 0.5s ease;
 }
 
 
@@ -14,7 +15,7 @@ a {
 }
 
 .section-bg {
-    background-color: #0b0c23;
+    background-color: #ffffff;
 }
 
 
@@ -24,12 +25,12 @@ a {
 
 
 #header {
-    background: rgb(0 0 0);
-    color: #fff;
+    background: rgb(255 255 255);
+    color: #000;
 }
 
 .navbar a {
-    color: #ffffffdb;
+    color: #000000db;
 }
 
 .navbar .active, .navbar .active:focus, .navbar li:hover>a {
@@ -37,24 +38,31 @@ a {
 }
 
 .navbar .dropdown:hover>ul {
-    background: #000;
+    background: #fff;
 }
 
 .navbar .dropdown ul a {
-    color: #fff;
+    color: #000;
 }
 
 .mobile-nav-toggle {
-    color: #fff;
+    color: #000;
 }
 
 .navbar-mobile ul {
-    background-color: #000;
+    background-color: #fff;
 }
 
 .navbar-mobile {
     background: #323233;
 }
+
+.logo img {
+  /* Duración de la transición */
+  transition: opacity 0.5s ease;
+}
+
+
 
 /*--------------------------------------------------------------
 # breadcrumbs
@@ -62,15 +70,15 @@ a {
 
 
 .breadcrumbs {
-    background-color: #000000;
+    background-color: #ababab08;
 }
 
 .breadcrumbs h2 {
-    color: #fff;
+    color: #000;
 }
 
 .breadcrumbs ol li+li {
-    color: #fff;
+    color: #000;
 }
 
 /*--------------------------------------------------------------
@@ -78,13 +86,35 @@ a {
 --------------------------------------------------------------*/
 
 .features .nav-link {
-   background: white;
-   color: #2030bb;
+  background: #ffffff;
+  color: #000000;
 }
 
 .features p ,
 .features h3 {
-    color: #fff;
+    color: #000;
+}
+
+.features .nav-link h4 {
+  color: #000
+}
+
+.features .nav-link:hover {
+  color: #170c66;
+}
+
+.features .nav-link.active {
+  transition: 0.3s;
+  background: #170c66 linear-gradient(rgb(32 48 187), rgb(25 18 97));
+  border-color: #000000;
+}
+
+.features .nav-link.active h4 {
+  color: #FFFFFF; /* White */
+}
+
+.features .nav-link.active i {
+  color: #FFFFFF !important;
 }
 
 /*--------------------------------------------------------------
@@ -92,17 +122,17 @@ a {
 --------------------------------------------------------------*/
 
 #historia{
-background: #000;
+background: #efefef;
 }
 
 .historia h2 {
- color: #fff;
+ color: #000;
 }
 
 
 .historia .our-story {
-    background-color: #0b0c23;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000;
 }
 
 .historia .our-story h4 {
@@ -110,19 +140,19 @@ background: #000;
 }
 
 .historia .our-story h3 {
-    color: #fff;
+    color: #000;
 }
 
 .historia ul i {
-    color: #fff;
+    color: #000;
 }
 
 .historia .watch-video a {
-    color: #fff;
+    color: #000;
 }
 
 .historia .watch-video i {
-    color: #fff;
+    color: #000;
 }
 
 /*--------------------------------------------------------------
@@ -131,17 +161,17 @@ background: #000;
 
 
 .accordion-button {
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   border: none;
 }
 
 .accordion-button i{
-  color: #fff;
+  color: #000;
 }
 
 .accordion-item {
-    border: 1px solid #000 !important;
+    border: 1px solid #fff !important;
 }
 
 .accordion-button:not(.collapsed) {
@@ -166,31 +196,31 @@ background: #000;
 }
 
 .preguntas{
-  color: #fff;
+  color: #000;
 }
 
 
 /*--------------------------------------------------------------
-# accordion 
+# footer 
 --------------------------------------------------------------*/
 
-.footer-white {
-    background: #fff;
-    color: #000;
+.footer {
+  background: #e29505 linear-gradient(rgb(225 152 3), rgb(249 181 22), rgb(217 142 6));
+  color: #fff;
 }
 
 #footer .footer-top h4 {
-    color: #000;
+    color: #fff;
 }
 
 #footer .footer-top .footer-links ul a {
-    color: #000;
+    color: #fff;
 }
 
 #footer .footer-top .footer-links ul i {
-    color: #000;
+    color: #fff;
 }
 
 #footer .copyright {
-    border-top: 1px solid #000000;
+    border-top: 1px solid #fff;
 }

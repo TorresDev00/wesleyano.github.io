@@ -25,7 +25,7 @@
 
 
   <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/sobreNosotros.css" rel="stylesheet">
+  <link href="assets/css/dark.css" id="darkStyleSheet" rel="stylesheet"> 
 
 
 </head>
@@ -67,15 +67,22 @@
         <!-- ======= Breadcrumbs Section ======= -->
         <section class="breadcrumbs">
           <div class="container">
-    
+            <h2>Sobre Nosotros</h2>
             <div class="d-flex justify-content-between align-items-center">
-              <h2>Sobre Nosotros</h2>
               <ol>
                 <li><a href="index.html">Inicio</a></li>
                 <li>Sobre Nosotros</li>
               </ol>
-            </div>
-    
+              <!-- Checkbox personalizado -->
+              <div class="d-flex">
+                <input type="checkbox" id="buttonStyle" class="d-none">
+                <label for="buttonStyle" class="btn btn-link p-0">
+                  <i class="bi bi-sun-fill text-warning d-none fs-5"></i>
+                  <i class="bi bi-moon-fill text-white fs-5"></i>
+                </label>
+              </div>
+            </div> 
+
           </div>
         </section><!-- Breadcrumbs Section -->
 
@@ -102,7 +109,7 @@
               </a>
             </li>
           </ul>
-          <div class="tab-content mt-2">
+          <div class="tab-content mt-4">
             <div class="tab-pane active show" id="tab-1">
               <div class="row align-items-center">
                 <div class="col-lg-6 mt-3 mt-lg-0">
@@ -153,7 +160,7 @@
 
           <div class="row position-relative">
 
-            <div class="col-lg-7 historia-img" style="background-image: url(assets/img/Wesleyano/2.png);"></div>
+            <div class="col-lg-7 historia-img" style="background-image: url(assets/img/Wesleyano/5.png);"></div>
 
             <div class="col-lg-7">
               <h2>Reseña Historica</h2>
@@ -258,7 +265,7 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer-white">
+  <footer id="footer" class="footer">
     <div class="footer-top">
       <div class="container">
 
@@ -312,14 +319,16 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery-3.6.0.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
 
   <!-- Template Main JS File -->
   <script src="assets/js/main_2.js"></script>
+  <script src="assets/js/sobreNosotros.js"></script>
 
 </body>
 

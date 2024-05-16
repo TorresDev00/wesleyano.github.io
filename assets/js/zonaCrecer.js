@@ -143,10 +143,11 @@ $(document).ready(function() {
    */
 
    AOS.init({
-   	offset: 100,
-   	delay: 100,
-   	duration: 1000,
-   	easing: 'ease-in-out',
+    duration: 1000,
+    easing: 'ease-in-out',
+    once: false,
+    mirror: true,
+    anchorPlacement: 'top-bottom',
    	onEnter: function() {
       // Mostrar contenido al pasar el mouse por encima
     },

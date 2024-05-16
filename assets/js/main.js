@@ -114,7 +114,7 @@
         </div>`;
 
         let divInfo = `<div class="icon-box-yellow h-100">
-        <p class="description py-4" data-aos="fade-up" data-aos-delay="100" >Educación cristiana para formar una generación relevante y eficaz en la propagación del evangelio.</p>
+        <p class="description py-4 my-2" data-aos="fade-up" data-aos-delay="100" >Educación cristiana para formar una generación relevante y eficaz en la propagación del evangelio.</p>
         </div>`;
 
         excelencia.classList.add('transition');
@@ -150,7 +150,7 @@
           </div>`;
 
           let divInfo = `<div class="icon-box-white h-100">
-          <p class="description py-3" data-aos="fade-up" data-aos-delay="100"> Un estilo de vida que erradica el pecado, con una integridad para la manifestación de un evangelio genuino</p>
+          <p class="description py-4 my-2" data-aos="fade-up" data-aos-delay="100"> Un estilo de vida que erradica el pecado, con una integridad para la manifestación de un evangelio genuino</p>
           </div>`;
 
           santidad.classList.add('transition');
@@ -185,7 +185,7 @@
           </div>`;
 
           let divInfo = `<div class="icon-box h-100">
-          <p class="description py-4" data-aos="fade-up" data-aos-delay="100">Apasionados por una intimidad ferviente y una adoración transformadora.</p>
+          <p class="description py-4 my-2" data-aos="fade-up" data-aos-delay="100">Apasionados por una intimidad ferviente y una adoración transformadora.</p>
           </div>`;
 
           vidaEspiritu.classList.add('transition');

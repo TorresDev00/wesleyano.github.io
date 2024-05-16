@@ -30,28 +30,35 @@
 
 
 #features {
-  width: 100%;
-  min-height: 100vh; /* Set the height to 100% of the viewport height */
-  background: url('../assets/img/programas/zonaCrecerFondo.png');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
+  width: 100%;
+  min-height: 250vh; /* Set the height to 100% of the viewport height */
 }
 
-.image-text {
+#background-image {
+  width: 100%;
+  height: 400vh;
+  object-fit: cover;
+  z-index: -1; /* Ensure the image is behind all other elements */
   position: absolute;
-  bottom: 0;
   top: 0;
   left: 0;
-  right: 0;
+}
+
+.image-container{
+  padding-top: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  color: #fff
 }
+
+.image-text {
+  margin: 100px;
+  color: #fff;
+}
+
 
 
 
@@ -106,30 +113,40 @@
 
 
   <section id="features" class="image-container">
-    <div class="image-text" data-aos='fade-up' data-aos-delay="100">
-      <h2>Texto 1</h2>
+    <img src="../assets/img/programas/zonaCrecerFondo.png" id="background-image" />
+    <div class="image-container">
+      <div class="image-text" data-aos='fade-up' data-aos-delay="100">
+        <h2>Zona crecer es un programa de formacion</h2>
+      </div>
+      <div class="image-text" data-aos='fade-up' data-aos-delay="200">
+        <h2>que busca el crecimiento y eduacion infantil</h2>
+      </div>
+      <div class="image-text" data-aos='fade-up' data-aos-delay="200">
+        <h2>Priorizando una alta eduacicon de calidad</h2>
+      </div>
+      <div class="image-text" data-aos='fade-up' data-aos-delay="200">
+        <h2>Asi como brindando enseñando sobre Jesus</h2>
+      </div>
+      <div class="image-text" data-aos='fade-up' data-aos-delay="200">
+        <h2>Con el fin de que tengan una identidad</h2>
+      </div>
+      <div class="image-text" data-aos='fade-up' data-aos-delay="200">
+        <h2>Y puedan tener metas claras</h2>
+      </div>
+      <div class="image-text" data-aos='fade-up' data-aos-delay="200">
+        <h2>Con las cuales podran crecer</h2>
+      </div>
+      <div class="image-text" data-aos='fade-up' data-aos-delay="200">
+        <h2>Tanto educativamente como espituritualmente</h2>
+      </div>
+      <div class="image-text" data-aos='fade-up' data-aos-delay="200">
+        <h2>para alcanzar sus metas en la vida</h2>
+      </div>
+
     </div>
+
   </section>
 
-
-  <section class="sectionText">
-    <div class="container">
-
-     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-   </div>
- </section><!-- End About Section -->
-
- <section id="features" class="image-container">
-    <div class="image-text" data-aos='fade-up' data-aos-delay="100">
-      <h2>Texto 1</h2>
-    </div>
-  </section>
 
 
 

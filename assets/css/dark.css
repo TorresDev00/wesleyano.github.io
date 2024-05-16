@@ -1,0 +1,225 @@
+/*CSS color oscuro*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+body {
+    background: #000;
+    transition: background 0.5s ease;
+}
+
+
+a {
+    color: #2196F3;
+}
+
+.section-bg {
+    background-color: #090a21;
+}
+
+
+/*--------------------------------------------------------------
+# Header - Nav
+--------------------------------------------------------------*/
+
+
+#header {
+    background: rgb(0 0 0);
+    color: #fff;
+}
+
+.navbar a {
+    color: #ffffffdb;
+}
+
+.navbar .active, .navbar .active:focus, .navbar li:hover>a {
+    background: #ffffff4f;
+}
+
+.navbar .dropdown:hover>ul {
+    background: #000;
+}
+
+.navbar .dropdown ul a {
+    color: #fff;
+}
+
+.mobile-nav-toggle {
+    color: #fff;
+}
+
+.navbar-mobile ul {
+    background-color: #000;
+}
+
+.navbar-mobile {
+    background: #323233;
+}
+
+.logo img {
+  /* Duración de la transición */
+  transition: opacity 0.5s ease;
+}
+
+
+/*--------------------------------------------------------------
+# breadcrumbs
+--------------------------------------------------------------*/
+
+
+.breadcrumbs {
+    background-color: #000000;
+}
+
+.breadcrumbs h2 {
+    color: #fff;
+}
+
+.breadcrumbs ol li+li {
+    color: #fff;
+}
+
+/*--------------------------------------------------------------
+# features
+--------------------------------------------------------------*/
+
+.features .nav-link {
+    background: #211f2d;
+    color: #afafaf;
+}
+
+.features p ,
+.features h3 {
+    color: #fff;
+}
+
+.features .nav-link h4 {
+  color: #afafaf
+}
+
+.features .nav-link:hover {
+  color: #fff;
+}
+
+.features .nav-link.active {
+  transition: 0.3s;
+  background: #170c66 linear-gradient(rgb(32 48 187), rgb(25 18 97));
+  border-color: #000000;
+}
+
+.features .nav-link.active h4 {
+  color: #FFFFFF; /* White */
+}
+
+.features .nav-link.active i {
+  color: #FFFFFF !important;
+}
+
+/*--------------------------------------------------------------
+# historia
+--------------------------------------------------------------*/
+
+#historia{
+background: #000;
+}
+
+.historia h2 {
+ color: #fff;
+}
+
+
+.historia .our-story {
+    background-color: #0b0c23;
+    color: #fff;
+}
+
+.historia .our-story h4 {
+  color: #838893;
+}
+
+.historia .our-story h3 {
+    color: #fff;
+}
+
+.historia ul i {
+    color: #fff;
+}
+
+.historia .watch-video a {
+    color: #fff;
+}
+
+.historia .watch-video i {
+    color: #fff;
+}
+
+/*--------------------------------------------------------------
+# accordion 
+--------------------------------------------------------------*/
+
+
+.accordion-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+
+.accordion-button i{
+  color: #fff;
+}
+
+.accordion-item {
+    border: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #170c66;
+  color: #fff;
+}
+
+.accordion-button:not(.collapsed) i{
+  color: #fff;
+}
+
+.accordion-button:focus {
+  outline: none; /* Elimina el contorno al enfocar el botón */
+  border: none !important; /* Elimina el borde del botón */
+  box-shadow: none !important; /* Elimina la sombra del botón */
+}
+
+.accordion-body {
+  background-color: #fff;
+  border: 1px solid #ccc; /* Añade un borde al cuerpo del acordeón */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añade una sombra al cuerpo del acordeón */
+}
+
+.preguntas{
+  color: #fff;
+}
+
+
+/*--------------------------------------------------------------
+# accordion 
+--------------------------------------------------------------*/
+
+.footer {
+    background: #fff;
+    color: #000;
+}
+
+#footer .footer-top h4 {
+    color: #000;
+}
+
+#footer .footer-top .footer-links ul a {
+    color: #000;
+}
+
+#footer .footer-top .footer-links ul i {
+    color: #000;
+}
+
+#footer .copyright {
+    border-top: 1px solid #000000;
+}
