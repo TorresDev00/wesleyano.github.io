@@ -989,6 +989,10 @@ section {
   margin: 10px 0 0 0;
 }
 
+.features h3{
+  font-size: calc(1.375rem + 3.5vw);
+  text-align: center;
+}
 
 .features p{
   text-align: justify;

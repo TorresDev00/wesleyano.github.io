@@ -5,7 +5,7 @@
 --------------------------------------------------------------*/
 
 body {
-    background: #000;
+    background: #101010;
     transition: background 0.5s ease;
 }
 
@@ -15,7 +15,7 @@ a {
 }
 
 .section-bg {
-    background-color: #090a21;
+    background-color: #000;
 }
 
 
@@ -25,7 +25,7 @@ a {
 
 
 #header {
-    background: rgb(0 0 0);
+    background: #101010;
     color: #fff;
 }
 
@@ -69,7 +69,7 @@ a {
 
 
 .breadcrumbs {
-    background-color: #000000;
+    background-color: #101010;
 }
 
 .breadcrumbs h2 {
@@ -85,7 +85,7 @@ a {
 --------------------------------------------------------------*/
 
 .features .nav-link {
-    background: #211f2d;
+    background: #101010;
     color: #afafaf;
 }
 
@@ -121,7 +121,7 @@ a {
 --------------------------------------------------------------*/
 
 #historia{
-background: #000;
+background: #101010;
 }
 
 .historia h2 {
@@ -130,7 +130,7 @@ background: #000;
 
 
 .historia .our-story {
-    background-color: #0b0c23;
+    background-color: #000;
     color: #fff;
 }
 
@@ -174,7 +174,7 @@ background: #000;
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: #170c66;
+  background-color: #101010;
   color: #fff;
 }
 
@@ -204,22 +204,22 @@ background: #000;
 --------------------------------------------------------------*/
 
 .footer {
-    background: #fff;
-    color: #000;
+    background: #101010;
+    color: #fff;
 }
 
 #footer .footer-top h4 {
-    color: #000;
+    color: #fff;
 }
 
 #footer .footer-top .footer-links ul a {
-    color: #000;
+    color: #fff;
 }
 
 #footer .footer-top .footer-links ul i {
-    color: #000;
+    color: #fff;
 }
 
 #footer .copyright {
-    border-top: 1px solid #000000;
+    border-top: 1px solid #fff;
 }

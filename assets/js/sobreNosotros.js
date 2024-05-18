@@ -47,7 +47,7 @@ $(document).ready(function() {
 
 	function cambioDark(){
 		$('.nav-link').click(function(event) {
-			$('.features .nav-link').css('background', '#211f2d');
+			$('.features .nav-link').css('background', '#101010');
 			$('.features .nav-link').css('color', '#afafaf');
 			$('.features .nav-link h4').css('color', '#afafaf');
 			$('.features .nav-link:hover').css('color', '#fff');
@@ -67,7 +67,7 @@ $(document).ready(function() {
 			$('.accordion-button i').css('color', '#fff');
 			if (!$(this).hasClass('collapsed')){
 				console.log('hola')
-				$('.accordion-button:not(.collapsed)').css('background-color', '#170c66');
+				$('.accordion-button:not(.collapsed)').css('background-color', '#101010');
 				$('.accordion-button:not(.collapsed) i').css('color', '#fff');
 				$('.accordion-button:focus').css('outline', 'none');
 				$('.accordion-button:focus').css('border', 'none !important');
@@ -82,7 +82,7 @@ $(document).ready(function() {
 	    });
 
 
-        $('#header').css('background', '#000');
+      $('#header').css('background', '#101010');
 		$('.mobile-nav-toggle').click(function(event) {
 			$('.navbar').css('background', '#000');
 			$('.navbar-mobile ul').css('background-color', '#000');
@@ -94,7 +94,7 @@ $(document).ready(function() {
 
 $('#buttonStyle').change(function() {
   if ($(this).is(':checked')) {
-  	$('body').css('background', '#fff');
+  	$('body').css('background', '#101010');
     $('body').css('transition', 'background 0.5s ease');
     $('a').css('color', '#2196F3');
     $('.section-bg').css('background-color', '#ffffff');
@@ -108,7 +108,7 @@ $('#buttonStyle').change(function() {
     $('.navbar-mobile ul').css('background-color', '#fff');
     $('.navbar-mobile').css('background', '#fff');
     $('.logo img').css('transition', 'opacity 0.5s ease');
-    $('.breadcrumbs').css('background-color', '#ababab08');
+    $('.breadcrumbs').css('background-color', '#fff');
     $('.breadcrumbs h2').css('color', '#000');
     $('.breadcrumbs ol li+li').css('color', '#000');
     $('.features p, .features h3').css('color', '#000');
@@ -165,11 +165,11 @@ $('#buttonStyle').change(function() {
     }, 200);
   }else{
 
-    $('body').css('background', '#000');
+    $('body').css('background', '#101010');
     $('body').css('transition', 'background 0.5s ease');
     $('a').css('color', '#2196F3');
-    $('.section-bg').css('background-color', '#090a21');
-    $('#header').css('background', 'rgb(0 0 0)');
+    $('.section-bg').css('background-color', '#000');
+    $('#header').css('background', '#101010');
     $('.navbar navbar-mobile').css('background', 'rgb(0 0 0)');
     $('.navbar a').css('color', '#ffffffdb');
     $('.navbar .active, .navbar .active:focus, .navbar li:hover>a').css('background', '#ffffff4f');
@@ -179,13 +179,13 @@ $('#buttonStyle').change(function() {
     $('.navbar-mobile ul').css('background-color', '#000');
     $('.navbar-mobile').css('background', '#323233');
     $('.logo img').css('transition', 'opacity 0.5s ease');
-    $('.breadcrumbs').css('background-color', '#000000');
+    $('.breadcrumbs').css('background-color', '#101010');
     $('.breadcrumbs h2').css('color', '#fff');
     $('.breadcrumbs ol li+li').css('color', '#fff');
+    $('.features .nav-link').css('background', '#101010');
+    $('.features .nav-link').css('color', '#afafaf');
     $('.features p, .features h3').css('color', '#fff');
     $('.features .nav-link h4').css('color', '#afafaf');
-	$('.features .nav-link').css('background', '#211f2d');
-	$('.features .nav-link').css('color', '#afafaf');
     $('.features .nav-link:hover').css('color', '#fff');
     $('.features .nav-link.active').css('transition', '0.3s');
     $('.features .nav-link.active').css('background', '#170c66 linear-gradient(rgb(32 48 187), rgb(25 18 97))');
@@ -193,9 +193,9 @@ $('#buttonStyle').change(function() {
     cambioDark();
     $('.features .nav-link.active h4').css('color', '#FFFFFF');
     $('.features .nav-link.active i').css('color', '#FFFFFF !important');
-    $('#historia').css('background', '#000');
+    $('#historia').css('background', '#101010');
     $('.historia h2').css('color', '#fff');
-    $('.historia .our-story').css('background-color', '#0b0c23');
+    $('.historia .our-story').css('background-color', '#000');
     $('.historia .our-story').css('color', '#fff');
     $('.historia .our-story h4').css('color', '#838893');
     $('.historia .our-story h3').css('color', '#fff');
@@ -215,15 +215,15 @@ $('#buttonStyle').change(function() {
     $('.accordion-body').css('border', '1px solid #ccc');
     $('.accordion-body').css('box-shadow', '0 2px 4px rgba(0, 0, 0, 0.1)');
     $('.preguntas').css('color', '#fff');
-    $('.footer').css('background', '#fff');
-    $('.footer').css('color', '#000');
-    $('#footer .footer-top h4').css('color', '#000');
-    $('#footer .footer-top .footer-links ul a').css('color', '#000');
-    $('#footer .footer-top .footer-links ul i').css('color', '#000');
-    $('.footer .footer-top h4').css('color', '#000');
-    $('.footer .footer-top .footer-links ul a').css('color', '#000');
-    $('.footer .footer-top .footer-links ul i').css('color', '#000');
-    $('.footer .copyright').css('border-top', '1px solid #000000');
+    $('.footer').css('background', '#101010');
+    $('.footer').css('color', '#fff');
+    $('#footer .footer-top h4').css('color', '#fff');
+    $('#footer .footer-top .footer-links ul a').css('color', '#fff');
+    $('#footer .footer-top .footer-links ul i').css('color', '#fff');
+    $('.footer .footer-top h4').css('color', '#fff');
+    $('.footer .footer-top .footer-links ul a').css('color', '#fff');
+    $('.footer .footer-top .footer-links ul i').css('color', '#fff');
+    $('.footer .copyright').css('border-top', '1px solid #fff');
 
     $(this).next('label').find('.bi-sun-fill').addClass('d-none');
     $(this).next('label').find('.bi-moon-fill').removeClass('d-none');
