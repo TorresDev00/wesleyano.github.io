@@ -758,6 +758,8 @@ section {
 }
 
 
+
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -1166,7 +1168,6 @@ section {
 .custom-section .icon-box:hover {
   background: #e29505 ;
   border-radius: 16px;
-  transition: all 0.1s;
 }
 
 .custom-section .icon-box .title{
@@ -1175,7 +1176,6 @@ section {
 
 .custom-section .icon-box:hover .title a {
   color: #fff;
-  transition: all 0.1s;
 }
 
 .custom-img {
