@@ -668,96 +668,6 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Historia Section
---------------------------------------------------------------*/
-.historia h2 {
-  font-size: 48px;
-  font-weight: 700;
-  font-family: #000;
-  margin: 30px 0;
-}
-
-@media (min-width: 991px) {
-  .historia h2 {
-    max-width: 65%;
-    margin: 0 0 80px 0;
-  }
-}
-
-.historia .our-story {
-  padding: 40px;
-  background-color: #f5f6f7;
-}
-
-@media (min-width: 991px) {
-  .historia .our-story {
-    padding-right: 35%;
-  }
-}
-
-.historia .our-story h4 {
-  text-transform: uppercase;
-  font-size: 18px;
-}
-
-.historia .our-story h3 {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.historia .our-story p:last-child {
-  margin-bottom: 0;
-}
-
-.historia ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.historia ul li {
-  padding: 5px 0;
-  display: flex;
-  align-items: center;
-}
-
-.historia ul i {
-  font-size: 20px;
-  margin-right: 10px;
-}
-
-.historia .watch-video i {
-  font-size: 32px;
-  transition: 0.3s;
-}
-
-.historia .watch-video a {
-  font-weight: 600;
-  margin-left: 8px;
-  transition: 0.3s;
-}
-
-.historia .watch-video:hover a {
-  color: #006d9d;
-}
-
-.historia .historia-img {
-  min-height: 600px;
-  background-size: cover;
-  background-position: center;
-}
-
-@media (min-width: 992px) {
-  .historia .historia-img {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-}
-
-
 
 
 /*--------------------------------------------------------------
@@ -892,15 +802,6 @@ section {
   color: #fff;
 }
 
-/*--------------------------------------------------------------
-# Nosotros
---------------------------------------------------------------*/
-
-.nosotros p{
-  text-align: justify;
-  font-size: 15px
-}
-
 
 
 /*--------------------------------------------------------------
@@ -922,89 +823,8 @@ section {
   overflow: hidden;
 }
 
-/*--------------------------------------------------------------
-# Preguntas Frecuentes - Acordeon
---------------------------------------------------------------*/
 
-.preguntas img{
-  max-width: 100%;
-}
 
-@media (max-width: 320px) and (max-width: 435px)  {
-  .preguntas img {
-    height:50vh; /* Ajusta el tamaño de la imagen para 320px */
-  }
-}
-
-/* Tamaño de pantalla 780px */
-@media (min-width: 436px) and (max-width: 780px) {
-  .preguntas img {
-    height:65vh; /* Ajusta el tamaño de la imagen para 320px */
-  }
-}
-
-/* Tamaño de pantalla 1024px */
-@media (min-width: 781px) and (max-width: 1024px) {
-  .preguntas img {
-    height:70vh; /* Ajusta el tamaño de la imagen para 320px */
-  }
-}
-
-/* Tamaño de pantalla 1440px */
-@media (min-width: 1025px) and (max-width: 1440px) {
-  .preguntas img {
-    height:80vh; /* Ajusta el tamaño de la imagen para 320px */
-  }
-}
-
-/*--------------------------------------------------------------
-# Preguntas Frecuentes - Acordeon
---------------------------------------------------------------*/
-
-.nav-tabs{
-  border-bottom: none !important;
-}
-
-.features .nav-link {
-  border: 0;
-  padding: 25px 20px;
-  box-shadow: 5px 5px 25px rgb(0 0 0 / 15%);
-  border-radius: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  transition: 0s;
-  cursor: pointer;
-  height: 100%;
-  margin-bottom: 20px; /* Add margin between buttons */
-}
-
-.features .nav-link i {
-  font-size: 32px;
-  line-height: 0;
-}
-
-.features .nav-link h4 {
-  font-size: 20px;
-  font-weight: 600;
-  margin: 10px 0 0 0;
-}
-
-.features h3{
-  font-size: calc(1.375rem + 3.5vw);
-  text-align: center;
-}
-
-.features p{
-  text-align: justify;
-}
-
-@media (max-width: 768px) {
-  .features .nav-item {
-    margin: 0 !important;
-  }
-}
 
 /*--------------------------------------------------------------
 # Logos
@@ -1079,13 +899,6 @@ section {
   color: #111;
 }
 
-.pensum .description {
-  font-size: 15px;
-  line-height: 28px;
-  margin-bottom: 0;
-  color: #fff;
-}
-
 .pensum .icon-box-full .title,
 .pensum .icon-box-full .description {
   position: relative;
@@ -1144,6 +957,27 @@ section {
 
 .custom-section p {
   text-align: justify;
+}
+
+@media (max-width: 768px) {
+
+  .modal .title h1:nth-child(2){
+    font-size: calc(1.3rem + .6vw) !important;
+  }
+  .custom-section div {
+    padding-top: 1.2rem !important;
+  }
+
+  .custom-section h2{
+    font-size: 20px;
+  }
+
+  .custom-section i{
+    font-size: 20px !important;
+  }
+  .custom-section p{
+    font-size: 0.9rem !important;
+  }
 }
 
 .custom-section img {
