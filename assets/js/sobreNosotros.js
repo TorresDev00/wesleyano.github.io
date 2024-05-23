@@ -53,6 +53,9 @@ $('#buttonStyle').change(function() {
     $('.sobreNosotros h3').css('color', '#000');
     $('.sobreNosotros p').css('color', '#000');
     $('.sobreNosotros .p-1').css('color', '#fff');
+    $('.sobreNosotros .section-change').css('background-color', '#fff');
+    $('.sobreNosotros .p-3').css('color', '#000');
+    $('.sobreNosotros .p-4').css('color', '#000');
     cambioLight();
     $('.footer').css('background', '#fff');
     $('.footer').css('color', '#000');
@@ -96,6 +99,7 @@ $('#buttonStyle').change(function() {
     $('.sobreNosotros h2').css('color', '#fff');
     $('.sobreNosotros h3').css('color', '#fff');
     $('.sobreNosotros p').css('color', '#fff');
+    $('.sobreNosotros .section-change').css('background-color', '#000');
     cambioDark();
     $('.footer').css('background', '#101010');
     $('.footer').css('color', '#fff');
