@@ -156,5 +156,18 @@ $(document).ready(function() {
     }
   });
 
+window.addEventListener('scroll', function() {
+  const textElements = document.querySelectorAll('.image-text');
+  textElements.forEach(function(element) {
+    const rect = element.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 300) { // Cambia '100' a la distancia que prefieras
+      element.style.opacity = '1';
+    } else {
+      element.style.opacity = '0';
+    }
+  });
+});
+
+
 
 });

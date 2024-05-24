@@ -7,7 +7,7 @@ $(document).ready(function() {
 
         $('#header').css('background', '#ffff');
 		$('.mobile-nav-toggle').click(function(event) {
-			$('.navbar').css('background', '#ffff');
+			$('.navbar').css('background', '#0000');
 			$('.navbar-mobile ul').css('background-color', '#fff');
 			$('.navbar-mobile').css('background', '#323233');
 		});
@@ -21,7 +21,7 @@ $(document).ready(function() {
 
       $('#header').css('background', '#101010');
 		$('.mobile-nav-toggle').click(function(event) {
-			$('.navbar').css('background', '#000');
+			$('.navbar').css('background', '#0000');
 			$('.navbar-mobile ul').css('background-color', '#000');
 			$('.navbar-mobile').css('background', '#323233');
 		});
@@ -36,6 +36,7 @@ $('#buttonStyle').change(function() {
     $('a').css('color', '#2196F3');
     $('.section-bg').css('background-color', '#ffffff');
     $('#header').css('background', 'rgb(255 255 255)');
+    $('.navbar').css('background', '#0000');
     $('.navbar navbar-mobile').css('background', 'rgb(255 255 255)');
     $('.navbar a').css('color', '#000000db');
     $('.navbar .active, .navbar .active:focus, .navbar li:hover>a').css('background', '#ffffff4f');
@@ -53,6 +54,9 @@ $('#buttonStyle').change(function() {
     $('.sobreNosotros h3').css('color', '#000');
     $('.sobreNosotros p').css('color', '#000');
     $('.sobreNosotros .p-1').css('color', '#fff');
+    $('.sobreNosotros .section-change').css('background-color', '#fff');
+    $('.sobreNosotros .p-3').css('color', '#000');
+    $('.sobreNosotros .p-4').css('color', '#000');
     cambioLight();
     $('.footer').css('background', '#fff');
     $('.footer').css('color', '#000');
@@ -80,6 +84,7 @@ $('#buttonStyle').change(function() {
     $('a').css('color', '#2196F3');
     $('.section-bg').css('background-color', '#000');
     $('#header').css('background', '#101010');
+    $('.navbar').css('background', '#0000');
     $('.navbar navbar-mobile').css('background', 'rgb(0 0 0)');
     $('.navbar a').css('color', '#ffffffdb');
     $('.navbar .active, .navbar .active:focus, .navbar li:hover>a').css('background', '#ffffff4f');
@@ -96,6 +101,7 @@ $('#buttonStyle').change(function() {
     $('.sobreNosotros h2').css('color', '#fff');
     $('.sobreNosotros h3').css('color', '#fff');
     $('.sobreNosotros p').css('color', '#fff');
+    $('.sobreNosotros .section-change').css('background-color', '#000');
     cambioDark();
     $('.footer').css('background', '#101010');
     $('.footer').css('color', '#fff');
