@@ -83,13 +83,13 @@
     const headerScrolled = () => {
       if (window.scrollY > 100) {
         selectHeader.classList.add('header-scrolled');
-        selectImg.classList.add('svg-blanco');
+        selectImg.src = 'assets/img/Wesleyano/logo_4.png'
         selectNavItems.forEach(item => {
           item.classList.remove('colorLi');
         });
       } else {
         selectHeader.classList.remove('header-scrolled');
-        selectImg.classList.remove('svg-blanco');
+        selectImg.src = 'assets/img/Wesleyano/logo_7.png'
         selectNavItems.forEach(item => {
           item.classList.add('colorLi');
         });
@@ -99,6 +99,117 @@
     window.addEventListener('load', headerScrolled);
     window.addEventListener('scroll', headerScrolled);
   }
+
+
+    // Animacion cambio fondo
+
+    let showingDivTitle = false;
+
+    document.getElementById("excelencia").addEventListener("click", function() {
+      const excelencia = document.querySelector('#excelencia');
+
+      if (excelencia) {
+        let divTitle = `<div class="icon-box-white h-100">
+        <h4 class="title mt-2 py-5 fs-3" data-aos="fade-up" data-aos-delay="200"><a>Excelencia</a></h4>
+        </div>`;
+
+        let divInfo = `<div class="icon-box-yellow h-100">
+        <p class="description py-4 my-2" data-aos="fade-up" data-aos-delay="100" >Educación cristiana para formar una generación relevante y eficaz en la propagación del evangelio.</p>
+        </div>`;
+
+        excelencia.classList.add('transition');
+
+        excelencia.style.opacity = 0;
+        excelencia.style.visibility = 'hidden';
+
+        setTimeout(() => {
+          if (showingDivTitle) {
+            excelencia.innerHTML = divInfo;
+          } else {
+            excelencia.innerHTML = divTitle;
+          }
+          excelencia.style.opacity = 1;
+          excelencia.style.visibility = 'visible';
+        }, 500); // Ajusta el tiempo de retraso según tus necesidades
+
+        showingDivTitle = !showingDivTitle; // Alternar el estado
+      } else {
+        console.error('No se encontró ningún elemento con el ID "excelencia"');
+      }
+    });
+
+
+      let showingDivTitle1 = false;
+
+      document.getElementById("santidad").addEventListener("click", function() {
+        const santidad = document.querySelector('#santidad');
+
+        if (santidad) {
+          let divTitle = `<div class="icon-box-black h-100">
+          <h4 class="title mt-2 py-5 fs-3" data-aos="fade-up" data-aos-delay="200"><a>Santidad</a></h4>
+          </div>`;
+
+          let divInfo = `<div class="icon-box-white h-100">
+          <p class="description py-4 my-2" data-aos="fade-up" data-aos-delay="100"> Un estilo de vida que erradica el pecado, con una integridad para la manifestación de un evangelio genuino</p>
+          </div>`;
+
+          santidad.classList.add('transition');
+
+          santidad.style.opacity = 0;
+          santidad.style.visibility = 'hidden';
+
+          setTimeout(() => {
+            if (showingDivTitle1) {
+              santidad.innerHTML = divInfo;
+            } else {
+              santidad.innerHTML = divTitle;
+            }
+            santidad.style.opacity = 1;
+            santidad.style.visibility = 'visible';
+      }, 500); // Ajusta el tiempo de retraso según tus necesidades
+
+      showingDivTitle1 = !showingDivTitle1; // Alternar el estado
+    } else {
+      console.error('No se encontró ningún elemento con el ID "santidad"');
+    }
+  });
+
+      let showingDivTitle2 = false;
+
+      document.getElementById("vidaEspiritu").addEventListener("click", function() {
+        const vidaEspiritu = document.querySelector('#vidaEspiritu');
+
+        if (vidaEspiritu) {
+          let divTitle = `<div class="icon-box-white h-100">
+          <h4 class="title mt-2 py-5 fs-3" data-aos="fade-up" data-aos-delay="200"><a>Vida en el Espíritu</a></h4>
+          </div>`;
+
+          let divInfo = `<div class="icon-box h-100">
+          <p class="description py-4 my-2" data-aos="fade-up" data-aos-delay="100">Apasionados por una intimidad ferviente y una adoración transformadora.</p>
+          </div>`;
+
+          vidaEspiritu.classList.add('transition');
+
+          vidaEspiritu.style.opacity = 0;
+          vidaEspiritu.style.visibility = 'hidden';
+
+          setTimeout(() => {
+            if (showingDivTitle2) {
+              vidaEspiritu.innerHTML = divInfo;
+            } else {
+              vidaEspiritu.innerHTML = divTitle;
+            }
+            vidaEspiritu.style.opacity = 1;
+            vidaEspiritu.style.visibility = 'visible';
+      }, 500); // Ajusta el tiempo de retraso según tus necesidades
+
+      showingDivTitle2 = !showingDivTitle2; // Alternar el estado
+    } else {
+      console.error('No se encontró ningún elemento con el ID "vidaEspiritu"');
+    }
+  });
+
+
 
   /**
    * Back to top button
@@ -246,6 +357,98 @@
       }
     }
   });
+
+
+new Swiper('.swiper_1', {
+  direction: 'horizontal', // Desplazamiento hacia la derecha
+  speed: 600,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false
+  },
+  slidesPerView: 'auto',
+  centeredSlides: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 50
+    }
+  }
+});
+
+new Swiper('.swiper_2', {
+  direction: 'horizontal', // Desplazamiento horizontal
+  speed: 600,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false
+  },
+  slidesPerView: 'auto',
+  centeredSlides: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 50
+    }
+  }
+});
+
+
+new Swiper('.swiper_3', {
+  direction: 'horizontal', // Desplazamiento hacia la derecha
+  speed: 600,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false
+  },
+  slidesPerView: 'auto',
+  centeredSlides: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 30
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 50
+    }
+  }
+});
 
   /**
    * Animation on scroll

@@ -1,0 +1,327 @@
+/*CSS color oscuro*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+body {
+    background: #101010;
+    transition: background 0.5s ease;
+}
+
+
+a {
+    color: #2196F3;
+}
+
+.section-bg {
+    background-color: #000;
+}
+
+
+/*--------------------------------------------------------------
+# Header - Nav
+--------------------------------------------------------------*/
+
+
+#header {
+    background: #101010;
+    color: #fff;
+}
+
+.navbar a {
+    color: #ffffffdb;
+}
+
+.navbar .active, .navbar .active:focus, .navbar li:hover>a {
+    background: #ffffff4f;
+}
+
+.navbar .dropdown:hover>ul {
+    background: #000;
+}
+
+.navbar .dropdown ul a {
+    color: #fff;
+}
+
+.mobile-nav-toggle {
+    color: #fff;
+}
+
+.navbar-mobile ul {
+    background-color: #000;
+}
+
+.navbar-mobile {
+    background: #323233;
+}
+
+.logo img {
+  /* Duración de la transición */
+  transition: opacity 0.5s ease;
+}
+
+
+/*--------------------------------------------------------------
+# breadcrumbs
+--------------------------------------------------------------*/
+
+
+.breadcrumbs {
+    background-color: #101010;
+}
+
+.breadcrumbs h2 {
+    color: #fff;
+}
+
+.breadcrumbs ol li+li {
+    color: #fff;
+}
+
+/*--------------------------------------------------------------
+# SobreNosotros
+--------------------------------------------------------------*/
+
+.sobreNosotros{
+  background-color: #101010;
+}
+
+
+.sobreNosotros .section{
+  background-color: #000;
+  border-radius: 20px;
+}
+
+.sobreNosotros .section-change{
+  background-color: #000;
+  border-radius: 20px;
+}
+
+.imgSemwesvem{
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;  
+  transform: rotate(-5deg) scale(1.2);
+  z-index: -1;
+  margin-bottom: 10px
+}
+
+.sobreNosotros h1{
+  font-size: calc(1.375rem + 3.5vw);
+  text-align: center;
+  color: #fff;
+  font-weight: bold; 
+}
+
+@media (min-width: 2300px) {
+  .sobreNosotros h1{
+    font-size: calc(1.375rem + 2.5vw);
+  }
+}
+
+.sobreNosotros h2{
+  font-size: calc(1.375rem + 2vw);
+  text-align: center;
+  color: #fff;
+  font-weight: bold; 
+}
+
+
+.sobreNosotros h3{
+  font-size: calc(1.1rem + 1vw);
+  text-align: center;
+  color: #fff;
+  font-weight: bold; 
+}
+
+.sobreNosotros h4{
+  font-size: calc(1.375rem + 2vw);
+  color: #fff;
+  font-weight: bold; 
+}
+
+.sobreNosotros p{
+  font-size: 1.25rem;
+  text-align: justify;
+  color: #fff;
+}
+
+.sobreNosotros .p-4{
+  text-align: center;
+}
+
+.sobreNosotros .switch {
+  position: relative;
+  display: inline-block;
+  width: 250px;
+  height: 68px;
+}
+
+.sobreNosotros .switch_input {
+  display: none;
+}
+
+.sobreNosotros .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc0;
+  border: #fff solid 2px;
+  transition: .4s;
+  border-radius: 34px; /* Consider using a more flexible unit like em or rem */
+}
+
+.sobreNosotros .slider:before {
+  position: absolute;
+  content: "\F4FF"; /* Código Unicode del icono "Power" de Bootstrap */
+  font-family: "Bootstrap-icons"; /* Nombre de la fuente de Bootstrap Icons */
+  height: 52px;
+  width: 52px;
+  left: 8px;
+  bottom: 8px;
+  background-color: #2030bb;
+  font-size: 30px;
+  transition: .4s;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* Color del icono */
+}
+
+/* Specificity and Prioritization: Using multiple selectors to increase specificity */
+input:checked + .slider {
+  background-color: #1a1a1a00;
+  border: #000 solid 2px;
+}
+
+input:checked + .slider:before {
+  transform: translateX(182px); /* Ajustado a la nueva anchura */
+}
+
+.slider .text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: .4s;
+  right: 10px;
+  font-size: 16px;
+  line-height: 8;
+  color: #fff;
+}
+
+input:checked + .slider .text {
+  right: 65px;
+  color: #000;
+}
+
+/* Telefono */
+.sobreNosotros .telefono {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .sobreNosotros .telefono {
+    height: 40%;
+  }
+}
+
+@media (max-width: 425px) {
+  .sobreNosotros .telefono {
+    height: 20%;
+  }
+}
+
+.sobreNosotros .telefono video:nth-child(2) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%; /* Limit the maximum width to prevent overflow */
+  max-height: 90vh; /* Limit the maximum height to prevent overflow */
+  width: 88%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 4vw;
+}
+
+@media (max-width: 768px) {
+  .sobreNosotros .telefono video:nth-child(2){
+    width: 86%;
+  }
+}
+
+@media (max-width: 425px) {
+  .sobreNosotros .telefono video:nth-child(2){
+    width: 84%;
+  }
+}
+
+
+.sobreNosotros .telefono img:first-child {
+  width: 95%;
+  position: relative;
+  z-index: 1;
+}
+
+
+.sobreNosotros .btn-reseña,
+.modal .btn-reseña {
+  background: #101010;
+  color: #fff;
+  border-radius: 34px;
+  font-size: 25px;
+}
+
+.sobreNosotros .btn-reseña i,
+.modal .btn-reseña i{
+  border-radius: 50%;
+  background-color: #2030bb;
+  color:#fff;
+  margin-left: 10px; 
+  font-size: 25px;
+}
+
+#modalReseña .modal-content {
+    background-color: #101010 !important;
+    color: #fff;
+}
+
+#modalReseña .custom-section {
+ background-color: #000;
+}
+
+/*--------------------------------------------------------------
+# accordion 
+--------------------------------------------------------------*/
+
+.footer {
+    background: #101010;
+    color: #fff;
+}
+
+#footer .footer-top h4 {
+    color: #fff;
+}
+
+#footer .footer-top .footer-links ul a {
+    color: #fff;
+}
+
+#footer .footer-top .footer-links ul i {
+    color: #fff;
+}
+
+#footer .copyright {
+    border-top: 1px solid #fff;
+}

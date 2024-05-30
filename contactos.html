@@ -21,8 +21,6 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <link href="assets/css/style.css" rel="stylesheet">
 
@@ -42,14 +40,14 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto" href="index.html">Inicio</a></li>
-          <li><a class="nav-link scrollto active" href="sobreNosotros.html">Sobre Nosotros</a></li>
+          <li><a class="nav-link scrollto" href="sobreNosotros.html">Sobre Nosotros</a></li>
           <li class="dropdown"><a href="#"><span>Academico</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="academico/pensum.html">Pensum</a></li>
+              <li><a href="academico/programasAliados.html">Programas</a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="equipo.html">Equipo</a></li>
-          <li><a class="nav-link scrollto" href="contactos.html">Contactos</a></li>
+          <li><a class="nav-link scrollto active" href="contactos.html">Contactos</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -83,6 +81,7 @@
 
         <div class="section-title" data-aos="fade-in" data-aos-delay="100">
           <h2>Acercate a Nosotros</h2>
+          <p>Comunicate con nosotros para poder saber mas de como puedes ingresar al Seminario.</p>
         </div>
 
        <div data-aos="fade-up" data-aos-delay="200">
@@ -102,7 +101,7 @@
 
             <div class="row">
 
-              <div class="mb-4 col-sm-6">
+              <div class="mb-2 col-sm-6">
                 <div class="input-group">
                   <button type="button" class="iconos btn btn-color"><i class="bi bi-people-fill"></i></button> 
                   <input type="text" placeholder="Nombre" class="form-control"  id="name">
@@ -110,7 +109,7 @@
                 <p class="error" style="color:#ff0000;text-align: center;" id="error2"></p>
               </div>
 
-              <div class="mb-4 col-sm-6">
+              <div class="mb-2 col-sm-6">
                 <div class="input-group">
                   <button type="button" class="iconos btn btn-color"><i class="bi bi-people"></i></button> 
                   <input type="text" placeholder="Apellido" class="form-control" id="apellido">
@@ -137,6 +136,14 @@
               <p class="error" style="color:#ff0000;text-align: center;" id="error5"></p>
             </div>
 
+             <div class="mb-4">
+              <div class="input-group">
+                <button type="button" class="iconos btn btn-color"><i class="bi bi-buildings"></i></button>  
+                <input type="text" placeholder="Ciudad" class="form-control" id="ciudad">
+              </div> 
+              <p class="error" style="color:#ff0000;text-align: center;" id="error6"></p>
+            </div>
+
           </form>
 
 
@@ -157,7 +164,7 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
+  <footer id="footer" class="footer-blue">
     <div class="footer-top">
       <div class="container">
 
@@ -165,22 +172,22 @@
          <div class="col-md-4 footer-links mt-4 link-1">
           <h4 class="text-center mb-4">Enlaces Utiles</h4>
           <ul>
-           <li><i class="bx bx-chevron-right"></i> <a class="ft-1" href="">Inicio</a></li>
-           <li><i class="bx bx-chevron-right"></i> <a class="ft-2" href="">Sobre nosotros</a></li>
-           <li><i class="bx bx-chevron-right"></i> <a class="ft-3" href="">Academico</a></li>
-           <li><i class="bx bx-chevron-right"></i> <a class="ft-4" href="">Equipo</a></li>
-           <li><i class="bx bx-chevron-right"></i> <a class="ft-5" href="">Contactos</a></li>
+           <li><i class="bx bx-chevron-right"></i> <a class="ft-1" href="index.html">Inicio</a></li>
+           <li><i class="bx bx-chevron-right"></i> <a class="ft-2" href="sobreNosotros.html">Sobre nosotros</a></li>
+           <li><i class="bx bx-chevron-right"></i> <a class="ft-3" href="academico/pensum.html">Pensun</a></li>
+           <li><i class="bx bx-chevron-right"></i> <a class="ft-4" href="equipo.html">Equipo</a></li>
+           <li><i class="bx bx-chevron-right"></i> <a class="ft-5" href="contactos.html">Contactos</a></li>
          </ul>
        </div>
 
        <div class="col-md-4 footer-links mt-4 link-2">
         <h4 class="text-center mb-4">Redes Sociales</h4>
         <ul>
-         <li><i class="bi bi-instagram px-3"></i> <a href="https://www.instagram.com/seminariowesleyanove/">Instagram</a></li>
-         <li><i class="bi bi-facebook px-3"></i> <a href="https://www.facebook.com/SeminarioWesleyanoDeVenezuela/">Facebook</a></li>
-         <li><i class="bi bi-twitter px-3"></i> <a href="https://whatsapp.com/channel/0029VaA697KHbFV7tkwwKZ0C">Whatsapp</a></li>
-         <li><i class="bi bi-youtube px-3"></i> <a href="https://www.youtube.com/@seminariowesleyano">Youtube</a></li>
-         <li><i class="bi bi-telegram px-3"></i> <a href="https://t.me/SEMWESVEN">Telegram</a></li>
+         <li><i class="bi bi-instagram px-3"></i> <a target="_blank" href="https://www.instagram.com/seminariowesleyanove/">Instagram</a></li>
+         <li><i class="bi bi-facebook px-3"></i> <a target="_blank" href="https://www.facebook.com/SeminarioWesleyanoDeVenezuela/">Facebook</a></li>
+         <li><i class="bi bi-twitter px-3"></i> <a target="_blank" href="https://whatsapp.com/channel/0029VaA697KHbFV7tkwwKZ0C">Whatsapp</a></li>
+         <li><i class="bi bi-youtube px-3"></i> <a target="_blank" href="https://www.youtube.com/@seminariowesleyano">Youtube</a></li>
+         <li><i class="bi bi-telegram px-3"></i> <a target="_blank" href="https://t.me/SEMWESVEN">Telegram</a></li>
        </ul>
      </div>
 
@@ -215,11 +222,7 @@
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
+ 
   <!-- Vendor JS Aler2 -->
 
   <script src="assets/sw2/sweetalert2.all.min.js"></script>
