@@ -25,10 +25,6 @@
   src: url('../font-family/Khavi-Regular.otf') format('opentype'); /* Ruta donde se encuentra el archivo .otf */
 }
 
-@font-face {
-  font-family: 'motte-light'; /* Nombre que se le dará a la fuente */
-  src: url('../font-family/Motte-Light.otf') format('opentype'); /* Ruta donde se encuentra el archivo .otf */
-}
 
 
 body {
@@ -1690,7 +1686,8 @@ section {
 }
 
 .footer-red {
-  background: #e74c3c;
+  background: #b20000;
+  color: #fff;
 }
 
 

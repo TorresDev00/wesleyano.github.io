@@ -127,6 +127,31 @@ $('#buttonStyle').change(function() {
   }
 })
 
+document.addEventListener('DOMContentLoaded', () => {
+    const profileItems = document.querySelectorAll('.profile-item');
+    const profileImage = document.getElementById('profile-image');
+
+    const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const image = entry.target.getAttribute('data-image');
+                profileImage.src = image;
+            }
+        });
+    }, options);
+
+    profileItems.forEach(item => {
+        observer.observe(item);
+    });
+});
+
+
 
 
 })
