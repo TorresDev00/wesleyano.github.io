@@ -104,7 +104,7 @@
           $mail->Password = 'biowtapdsonadpcx'; 
 
           $mail->setFrom('ejtr18@gmail.com', 'Wesleyano');
-          $mail->addAddress('ajosegt77@gmail.com',$nombreCompleto);
+          $mail->addAddress('ejtr18@gmail.com',$nombreCompleto);
           $mail->Subject = 'Preincripción';
           $mail->Body = $body; 
           $mail->AltBody = 'Error: HTML no soportado.';

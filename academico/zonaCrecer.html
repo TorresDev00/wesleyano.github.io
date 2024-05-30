@@ -28,19 +28,72 @@
 
   <style>
 
+    .navbar a {
+    color: #ffffffdb;
+    }
+
+    .navbar .active, .navbar .active:focus, .navbar li:hover>a {
+        background: #ffffff4f;
+    }
+
+    .navbar .dropdown:hover>ul {
+        background: #000;
+    }
+
+    .navbar .dropdown ul a {
+        color: #fff;
+    }
+
+    .mobile-nav-toggle {
+        color: #fff;
+    }
+
+    .navbar-mobile ul {
+        background-color: #000;
+    }
+
+    .navbar-mobile {
+        background: #323233;
+    }
+
+    .logo img {
+      /* Duración de la transición */
+      transition: opacity 0.5s ease;
+    }
 
     #features {
       position: relative;
       width: 100%;
       min-height: 250vh;
-      background-image: url('../assets/img/programas/zonaCrecerFondo.png'); /* Asegúrate de que la ruta de la imagen sea correcta */
-      background-attachment: fixed; /* Agrega el efecto parallax */
+      background-image: url('../assets/img/programas/zonaCrecerFondo.png');
+      background-attachment: fixed;
       background-position: top;
       background-repeat: no-repeat;
       background-size: cover;
+      transition: opacity 1s ease;
     }
 
-    .image-container {
+    #features::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(rgb(33 37 41 / 44%), rgb(0 0 0 / 88%));
+      background-attachment: fixed;
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
+
+    #features.blur::after {
+      opacity: 1;
+    }
+
+    .text-container {
       padding-top: 180px;
       display: flex;
       justify-content: center;
@@ -49,27 +102,73 @@
       text-align: center;
     }
 
-  .image-text {
-    margin: 10rem; /* Uso de unidades relativas para el margen */
-    color: #fff;
-    font-size: 1rem; /* Uso de unidades relativas para el tamaño de la fuente */
-    line-height: 1.5; /* Ajuste de la altura de línea */
-    opacity: 0;
-    transition: opacity 1s;
-  }
-
-  /* Media query para pantallas pequeñas */
-  @media (max-width: 768px) {
     .image-text {
-      font-size: 0.8rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
-      margin: 1.5rem; /* Margen más pequeño en pantallas pequeñas */
+      margin: 10rem 0;
+      color: #fff;
+      font-size: 1rem;
+      line-height: 1.5;
+      opacity: 0;
+      transition: opacity 1s;
+      z-index: 1;
     }
-  }
 
+    .image-text h1 {
+        font-size: calc(1.375rem + 3.5vw);
+    }
 
+    /* Media query para pantallas grandes */
+    @media (min-width: 2000px) {
+      .image-text {
+        margin: 30rem 0;
+      }
 
+      .image-text h2 {
+        font-size: 3rem;
+      }
+    }
 
+    /* Media query para tablets */
+    @media (max-width: 1023px) {
+      #features {
+        min-height: 200vh;
+        background-size: auto 100%;
+      }
 
+      .text-container {
+        padding-top: 150px;
+      }
+
+      .image-text {
+        margin: 10rem 0;
+      }
+
+      .image-text h2 {
+        font-size: 1.5rem;
+      }
+    }
+
+    /* Media query para móviles */
+    @media (max-width: 768px) {
+      #features {
+        min-height: 150vh;
+        background-size: auto 100%;
+      }
+
+      .text-container {
+        padding-top: 120px;
+      }
+
+      .image-text h2 {
+        font-size: 1.2rem;
+      }
+    }
+
+    /* Media query para pantallas muy pequeñas */
+    @media (max-width: 425px) {
+      .image-text h2 {
+        font-size: 1.5rem;
+      }
+    }
 
   </style>
 
@@ -89,7 +188,7 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto" href="../index.html">Inicio</a></li>
-          <li><a href="programasAliados.html">Programas Aliados</a></li>
+          <li><a href="programasAliados.html">Programas</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -99,9 +198,9 @@
 
 
   <section id="features" class="image-container">
-    <div class="image-container">
+    <div class="text-container">
       <div class="image-text" data-aos='fade-up' data-aos-delay="100">
-        <h2>Zona crecer es un programa de formacion</h2>
+        <h1>Zona crecer es un programa de formacion</h1>
       </div>
       <div class="image-text" data-aos='fade-up' data-aos-delay="200">
         <h2>que busca el crecimiento y eduacion infantil</h2>

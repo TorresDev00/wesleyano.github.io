@@ -2,13 +2,13 @@ $(document).ready(function() {
 
 	function cambioLight(){
 		$(".dropdown").hover(function() {
-	       $('.navbar .dropdown:hover>ul').css('background', '#fff');
+	       $('.navbar .dropdown:hover>ul').css('background', '#ffe600');
 	    });
 
-        $('#header').css('background', '#ffff');
+        $('#header').css('background', '#ffe600');
 		$('.mobile-nav-toggle').click(function(event) {
 			$('.navbar').css('background', '#0000');
-			$('.navbar-mobile ul').css('background-color', '#fff');
+			$('.navbar-mobile ul').css('background-color', '#ffe600');
 			$('.navbar-mobile').css('background', '#323233');
 		});
 	}
@@ -35,7 +35,7 @@ $('#buttonStyle').change(function() {
     $('body').css('transition', 'background 0.5s ease');
     $('a').css('color', '#2196F3');
     $('.section-bg').css('background-color', '#ffffff');
-    $('#header').css('background', 'rgb(255 255 255)');
+    $('#header').css('background', '#ffe600');
     $('.navbar').css('background', '#0000');
     $('.navbar navbar-mobile').css('background', 'rgb(255 255 255)');
     $('.navbar a').css('color', '#000000db');
@@ -43,22 +43,23 @@ $('#buttonStyle').change(function() {
     $('.navbar .dropdown:hover>ul').css('background', '#fff');
     $('.navbar .dropdown ul a').css('color', '#000');
     $('.mobile-nav-toggle').css('color', '#000');
-    $('.navbar-mobile ul').css('background-color', '#fff');
+    $('.navbar-mobile ul').css('background-color', '#ffe600');
     $('.navbar-mobile').css('background', '#fff');
     $('.logo img').css('transition', 'opacity 0.5s ease');
-    $('.breadcrumbs').css('background-color', '#fff');
+    $('.breadcrumbs').css('background-color', '#ffe600');
     $('.breadcrumbs h2').css('color', '#000');
     $('.breadcrumbs ol li+li').css('color', '#000');
     $('.sobreNosotros').css('background-color', '#ffe600');
     $('.sobreNosotros h2').css('color', '#000');
     $('.sobreNosotros h3').css('color', '#000');
+    $('.sobreNosotros h4').css('color', '#000');
     $('.sobreNosotros p').css('color', '#000');
     $('.sobreNosotros .p-1').css('color', '#fff');
     $('.sobreNosotros .section-change').css('background-color', '#fff');
     $('.sobreNosotros .p-3').css('color', '#000');
     $('.sobreNosotros .p-4').css('color', '#000');
     cambioLight();
-    $('.footer').css('background', '#fff');
+    $('.footer').css('background', '#ffe600');
     $('.footer').css('color', '#000');
     $('#footer .footer-top h4').css('color', '#000');
     $('#footer .footer-top .footer-links ul a').css('color', '#000');
@@ -100,6 +101,7 @@ $('#buttonStyle').change(function() {
     $('.sobreNosotros').css('background-color', '#101010');
     $('.sobreNosotros h2').css('color', '#fff');
     $('.sobreNosotros h3').css('color', '#fff');
+    $('.sobreNosotros h4').css('color', '#fff');
     $('.sobreNosotros p').css('color', '#fff');
     $('.sobreNosotros .section-change').css('background-color', '#000');
     cambioDark();

@@ -169,5 +169,12 @@ window.addEventListener('scroll', function() {
 });
 
 
+  window.addEventListener('scroll', function() {
+      if (window.scrollY > 250) {
+          document.querySelector('#features').classList.add('blur');
+      } else {
+          document.querySelector('#features').classList.remove('blur');
+      }
+  });
 
 });
