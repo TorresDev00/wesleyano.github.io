@@ -1,28 +1,65 @@
-/**
-* Template Name: Squadfree
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
-* Template URL: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 
 @font-face {
-  font-family: 'monserrat-medium'; /* Nombre que se le dará a la fuente */
-  src: url('../font-family/Montserrat-Medium.otf') format('opentype'); /* Ruta donde se encuentra el archivo .otf */
+  font-family: 'monserrat-medium';
+  /* Nombre que se le dará a la fuente */
+  src: url('../font-family/Montserrat-Medium.otf') format('opentype');
+  /* Ruta donde se encuentra el archivo .otf */
 }
 
 @font-face {
-  font-family: 'monserrat-black'; /* Nombre que se le dará a la fuente */
-  src: url('../font-family/Montserrat-Black.otf') format('opentype'); /* Ruta donde se encuentra el archivo .otf */
+  font-family: 'monserrat-black';
+  /* Nombre que se le dará a la fuente */
+  src: url('../font-family/Montserrat-Black.otf') format('opentype');
+  /* Ruta donde se encuentra el archivo .otf */
 }
 
 @font-face {
-  font-family: 'khavi-regular'; /* Nombre que se le dará a la fuente */
-  src: url('../font-family/Khavi-Regular.otf') format('opentype'); /* Ruta donde se encuentra el archivo .otf */
+  font-family: 'khavi-regular';
+  /* Nombre que se le dará a la fuente */
+  src: url('../font-family/Khavi-Regular.otf') format('opentype');
+  /* Ruta donde se encuentra el archivo .otf */
+}
+
+@font-face {
+  font-family: 'monserrat-BlackItalic';
+  /* Nombre que se le dará a la fuente */
+  src: url('../font-family/Montserrat-BlackItalic.otf') format('opentype');
+  /* Ruta donde se encuentra el archivo .otf */
+}
+
+
+@font-face {
+  font-family: 'montserrat-ExtraBold';
+  /* Nombre que se le dará a la fuente */
+  src: url('../font-family/Montserrat-ExtraBold.otf') format('opentype');
+  /* Ruta donde se encuentra el archivo .otf */
+}
+
+
+@font-face {
+  font-family: 'montserrat-ExtraLightItalic';
+  /* Nombre que se le dará a la fuente */
+  src: url('../font-family/Montserrat-ExtraLightItalic.otf') format('opentype');
+  /* Ruta donde se encuentra el archivo .otf */
+}
+
+
+@font-face {
+  font-family: 'montserrat-Thin';
+  /* Nombre que se le dará a la fuente */
+  src: url('../font-family/Montserrat-Thin.ttf') format('truetype');
+  /* Ruta donde se encuentra el archivo .ttf */
+}
+
+
+@font-face {
+  font-family: 'montserrat-ThinItalic';
+  /* Nombre que se le dará a la fuente */
+  src: url('../font-family/Montserrat-ThinItalic.ttf') format('truetype');
+  /* Ruta donde se encuentra el archivo .ttf */
 }
 
 
@@ -42,7 +79,7 @@ a:hover {
   text-decoration: none;
 }
 
-.a{
+.a {
   display: inline-block;
   background: #2030bb;
   padding: 6px 44px 8px 30px;
@@ -150,7 +187,8 @@ h6 {
 }
 
 .svg-blanco {
-  fill: #ffffff; /* Color blanco en formato hexadecimal */
+  fill: #ffffff;
+  /* Color blanco en formato hexadecimal */
 }
 
 @media (max-width: 768px) {
@@ -182,7 +220,7 @@ h6 {
   position: relative;
 }
 
-.navbar a{
+.navbar a {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -196,7 +234,7 @@ h6 {
   transition: 0.3s;
 }
 
-.navbar a:focus{
+.navbar a:focus {
   color: #170c66;
 }
 
@@ -213,11 +251,11 @@ h6 {
   background: #ffffff4f;
 }
 
-.navbar a:hover{
-   color: #170c66;
+.navbar a:hover {
+  color: #170c66;
 }
 
- .colorLi a {
+.colorLi a {
   color: #fff;
 }
 
@@ -399,10 +437,24 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgb(35 24 109 / 31%), rgb(0 0 0 / 55%)), url(../img/Wesleyano/5.png) top center;
-  background-size: cover;
   position: relative;
   margin-bottom: -90px;
+  overflow: hidden;
+  /* Asegura que el video no se desborde del contenedor */
+}
+
+#hero video#hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  object-fit: cover;
+  /* Asegura que el video cubra todo el contenedor */
+  z-index: -1;
+  /* Envía el video detrás del contenido del contenedor */
+  filter: brightness(50%);
+  /* Ajusta el brillo para que el contenido sea más legible */
 }
 
 #hero .hero-container {
@@ -416,9 +468,12 @@ h6 {
   align-items: center;
   flex-direction: column;
   text-align: center;
+  z-index: 1;
+  /* Asegura que el contenido esté delante del video */
 }
 
 #hero h1 {
+  font-family: "monserrat-BlackItalic";
   margin: 0 0 10px 0;
   font-size: 64px;
   font-weight: 700;
@@ -429,6 +484,7 @@ h6 {
 }
 
 #hero h2 {
+  font-family: "montserrat-ThinItalic";
   color: #fff;
   margin-bottom: 50px;
   font-size: 20px;
@@ -487,7 +543,7 @@ section {
   background-color: #9d9d9d0f;
 }
 
-.section-yellow{
+.section-yellow {
   background-color: #ffb52d;
 }
 
@@ -598,15 +654,17 @@ section {
   margin-bottom: 30px;
 }
 
-.about_1 p{
+.about_1 p {
   font-size: 20px;
 }
 
-.about_1 p , .about_2 p , .about_3 p{
+.about_1 p,
+.about_2 p,
+.about_3 p {
   text-align: justify;
 }
 
-.about .vision{
+.about .vision {
   font-size: 50px;
 }
 
@@ -773,6 +831,7 @@ section {
 
 .services .icon-box-white .title a,
 .services .icon-box-white .description {
+  font-family: 'montserrat-ExtraLightItalic';
   color: #000;
 }
 
@@ -782,6 +841,7 @@ section {
 
 .services .icon-box-yellow .title a,
 .services .icon-box-yellow .description {
+  font-family: 'montserrat-ExtraLightItalic';
   color: #000;
 }
 
@@ -791,6 +851,7 @@ section {
 
 .services .icon-box-black .title a,
 .services .icon-box-black .description {
+  font-family: 'montserrat-ExtraLightItalic';
   color: #fff;
 }
 
@@ -804,9 +865,9 @@ section {
 # Galeria
 --------------------------------------------------------------*/
 
-#galeria img{
- border-radius: 1vw;
- box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+#galeria img {
+  border-radius: 1vw;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
 }
 
 .galeria .galeria-carousel,
@@ -855,8 +916,10 @@ section {
   transition: all 0.3s ease-in-out;
   border-radius: 14px;
   z-index: 1;
-  height: 80vh; /* Establece la altura del div al 80% del alto de la pantalla */
-  width: 100%; /* Establece el ancho del div al 100% del ancho de la pantalla */
+  height: 80vh;
+  /* Establece la altura del div al 80% del alto de la pantalla */
+  width: 100%;
+  /* Establece el ancho del div al 100% del ancho de la pantalla */
   text-align: justify;
 }
 
@@ -901,27 +964,26 @@ section {
   z-index: 2;
 }
 
-.pensum .icono{
+.pensum .icono {
   position: relative;
   z-index: 2;
 }
 
 /* Agrega esta regla CSS para agrandar el div al pasar el mouse por encima */
 .pensum .icon-box-full:hover {
-  transform: scale(1.03); /* Aumenta la escala del div a 1.05 (un 5% más grande) */
+  transform: scale(1.03);
+  /* Aumenta la escala del div a 1.05 (un 5% más grande) */
   transition: all 0.3s ease-in-out;
 }
 
 /*--------------------------------------------------------------
 # Programas Aliados
 --------------------------------------------------------------*/
-
-
-/*--------------------------------------------------------------
-# ZonaCrecer
---------------------------------------------------------------*/
-
-
+@media (min-width: 1700px) {
+  .programasAliados {
+    padding: 10rem 10rem !important;
+  }
+}
 
 
 
@@ -947,12 +1009,12 @@ section {
   background-color: #f2f2f2;
   border-radius: 2vw;
   text-align: justify;
-  width: 100%; 
+  width: 100%;
   max-width: 900px;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
-.custom-section h2{
+.custom-section h2 {
   font-size: 30px;
 }
 
@@ -962,21 +1024,23 @@ section {
 
 @media (max-width: 768px) {
 
-  .modal .title h1:nth-child(2){
+  .modal .title h1:nth-child(2) {
     font-size: calc(1.3rem + .6vw) !important;
   }
+
   .custom-section div {
     padding-top: 1.2rem !important;
   }
 
-  .custom-section h2{
+  .custom-section h2 {
     font-size: 20px;
   }
 
-  .custom-section i{
+  .custom-section i {
     font-size: 20px !important;
   }
-  .custom-section p{
+
+  .custom-section p {
     font-size: 0.9rem !important;
   }
 }
@@ -984,7 +1048,8 @@ section {
 .custom-section img {
   margin: 0;
   width: 100%;
-  height: auto; /* Cambiado a auto para mantener la proporción de la imagen */
+  height: auto;
+  /* Cambiado a auto para mantener la proporción de la imagen */
   object-fit: cover;
   border-radius: 0 0 2vw 2vw;
 }
@@ -1001,11 +1066,12 @@ section {
 }
 
 .custom-section .icon-box:hover {
-  background: #e29505 ;
+  background: #e29505;
   border-radius: 16px;
 }
 
-.custom-section .icon-box .title{
+.custom-section .icon-box .title {
+  font-family: 'montserrat-ExtraLightItalic';
   text-align: center;
 }
 
@@ -1022,7 +1088,7 @@ section {
 }
 
 @media (max-width: 575.98px) {
-  .xs-0{
+  .xs-0 {
     margin: 0 !important;
   }
 }
@@ -1374,19 +1440,19 @@ section {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-.testimonials .testimonial-item .testimonio_p1{
+.testimonials .testimonial-item .testimonio_p1 {
   font-size: 14.6px;
 }
 
-.testimonials .testimonial-item .testimonio_p2{
+.testimonials .testimonial-item .testimonio_p2 {
   font-size: 15px;
 }
 
-.testimonials .testimonial-item .testimonio_p3{
+.testimonials .testimonial-item .testimonio_p3 {
   font-size: 14.1px;
 }
 
-.testimonials .testimonial-item .testimonio_p4{
+.testimonials .testimonial-item .testimonio_p4 {
   font-size: 13.6px;
 }
 
@@ -1537,99 +1603,12 @@ section {
   margin-bottom: 0;
 }
 
-  /*.contact .php-email-form {
-    box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
-    padding: 30px;
-    background: #fff;
-  }
-
-  .contact .php-email-form .error-message {
-    display: none;
-    color: #fff;
-    background: #ed3c0d;
-    text-align: left;
-    padding: 15px;
-    font-weight: 600;
-  }
-
-  .contact .php-email-form .error-message br+br {
-    margin-top: 25px;
-  }
-
-  .contact .php-email-form .sent-message {
-    display: none;
-    color: #fff;
-    background: #18d26e;
-    text-align: center;
-    padding: 15px;
-    font-weight: 600;
-  }
-
-  .contact .php-email-form .loading {
-    display: none;
-    background: #fff;
-    text-align: center;
-    padding: 15px;
-  }
-
-  .contact .php-email-form .loading:before {
-    content: "";
-    display: inline-block;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    margin: 0 10px -6px 0;
-    border: 3px solid #18d26e;
-    border-top-color: #eee;
-    animation: animate-loading 1s linear infinite;
-  }
-
-  .contact .php-email-form input,
-  .contact .php-email-form textarea {
-    border-radius: 0;
-    box-shadow: none;
-    font-size: 14px;
-  }
-
-  .contact .php-email-form input::focus,
-  .contact .php-email-form textarea::focus {
-    background-color: #67b0d1;
-  }
-
-  .contact .php-email-form input {
-    padding: 10px 15px;
-  }
-
-  .contact .php-email-form textarea {
-    padding: 12px 15px;
-  }
-
-  .contact .php-email-form button[type=submit] {
-    background: #67b0d1;
-    border: 0;
-    padding: 10px 24px;
-    color: #fff;
-    transition: 0.4s;
-  }
-
-  .contact .php-email-form button[type=submit]:hover {
-    background: #8ec4dd;
-  }
-
-  @keyframes animate-loading {
-    0% {
-      transform: rotate(0deg);
-    }
-
-    100% {
-      transform: rotate(360deg);
-    }
-  }*/
 
 .btn-color {
   background: #170c66;
   color: #ffffff;
-  transition: background 0.2s ease-in-out; /* Añade una transición suave al cambio de fondo */
+  transition: background 0.2s ease-in-out;
+  /* Añade una transición suave al cambio de fondo */
 }
 
 .btn-color:hover {
@@ -1644,7 +1623,8 @@ section {
 
 .btn-color:active,
 .btn-color:focus {
-  background: #1a0d88; /* Cambia ligeramente el color de fondo al seleccionar el botón */
+  background: #1a0d88;
+  /* Cambia ligeramente el color de fondo al seleccionar el botón */
   color: #ffffff;
 }
 
@@ -1687,6 +1667,11 @@ section {
 
 .footer-red {
   background: #b20000;
+  color: #fff;
+}
+
+.footer-aquamarine {
+  background: #68bfad;
   color: #fff;
 }
 
@@ -1785,53 +1770,14 @@ section {
   padding-top: 30px;
 }
 
-.copyright img {
-  width: 60px;
-}
 
-/* Tamaño de pantalla 320px */
-@media (max-width: 320px) {
-  .copyright img {
-    width: 80px; /* Ajusta el tamaño de la imagen para 320px */
+@media (min-width: 2100x) {
+  .fit {
+    margin-top: calc(10em + 15rem);
   }
 }
 
-/* Tamaño de pantalla 375px */
-@media (min-width: 321px) and (max-width: 375px) {
-  .copyright img {
-    width: 60px; /* Ajusta el tamaño de la imagen para 375px */
-    margin-top: 5vw
-  }
-}
 
-/* Tamaño de pantalla 435px */
-@media (min-width: 376px) and (max-width: 435px) {
-  .copyright img {
-    width: 55px; /* Ajusta el tamaño de la imagen para 435px */
-    margin-top: 5vw
-  }
-}
-
-/* Tamaño de pantalla 780px */
-@media (min-width: 436px) and (max-width: 780px) {
-  .copyright img {
-    width: 50px; /* Ajusta el tamaño de la imagen para 780px */
-  }
-}
-
-/* Tamaño de pantalla 1024px */
-@media (min-width: 781px) and (max-width: 1024px) {
-  .copyright img {
-    width: 45px; /* Ajusta el tamaño de la imagen para 1024px */
-  }
-}
-
-/* Tamaño de pantalla 1440px */
-@media (min-width: 1025px) and (max-width: 1440px) {
-  .copyright img {
-    width: 55px; /* Ajusta el tamaño de la imagen para 1440px */
-  }
-}
 
 #footer .credits {
   padding-top: 10px;

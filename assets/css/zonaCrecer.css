@@ -6,6 +6,10 @@
     color: #ffffffdb;
     }
 
+    #header.header-scrolled {
+    background: #f8b416;
+    }
+
     .navbar .active, .navbar .active:focus, .navbar li:hover>a {
         background: #ffffff4f;
     }
@@ -35,111 +39,145 @@
       transition: opacity 0.5s ease;
     }
 
+#features {
+    position: relative;
+    width: 100%;
+    height: 450vh;
+    overflow: hidden;
+}
+
+#backgroundVideo {
+    position: fixed; /* Usamos fixed para que el video permanezca en su lugar durante el scroll */
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translateX(-50%); /* Centrar horizontalmente */
+    z-index: -1;
+}
+
+#features::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgb(33 37 41 / 44%), rgb(0 0 0 / 88%));
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+
+#features.blur::after {
+    opacity: 1;
+}
+
+.text-container {
+    position: relative;
+    z-index: 1;
+    padding-top: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.image-text {
+    margin: 12rem 0;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.5;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+}
+
+.image-text h1 {
+    font-size: calc(1.375rem + 3.5vw);
+}
+
+/* Media query para pantallas grandes */
+@media (min-width: 2000px) {
     #features {
-      position: relative;
-      width: 100%;
-      min-height: 250vh;
-      background-image: url('../img/programas/zonaCrecerFondo.png');
-      background-attachment: fixed;
-      background-position: top;
-      background-repeat: no-repeat;
-      background-size: cover;
-      transition: opacity 1s ease;
-    }
-
-    #features::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: linear-gradient(rgb(33 37 41 / 44%), rgb(0 0 0 / 88%));
-      background-attachment: fixed;
-      background-position: top;
-      background-repeat: no-repeat;
-      background-size: cover;
-      opacity: 0;
-      transition: opacity 1s ease;
-    }
-
-    #features.blur::after {
-      opacity: 1;
-    }
-
-    .text-container {
-      padding-top: 180px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      text-align: center;
+        height: 500vh;
     }
 
     .image-text {
-      margin: 10rem 0;
-      color: #fff;
-      font-size: 1rem;
-      line-height: 1.5;
-      opacity: 0;
-      transition: opacity 1s;
-      z-index: 1;
+        margin: 15rem 0;
     }
 
-    .image-text h1 {
-        font-size: calc(1.375rem + 3.5vw);
-    }
-
-    /* Media query para pantallas grandes */
-    @media (min-width: 2000px) {
-      .image-text {
-        margin: 30rem 0;
-      }
-
-      .image-text h2 {
+    .image-text h2 {
         font-size: 3rem;
-      }
+    }
+}
+
+/* Media query para tablets */
+@media (max-width: 1500px) {
+    #features {
+        min-height: 550vh;
+        background-size: auto 100%;
+    }
+}
+
+/* Media query para tablets */
+@media (max-width: 1023px) {
+    #features {
+        min-height: 450vh;
+        background-size: auto 100%;
     }
 
-    /* Media query para tablets */
-    @media (max-width: 1023px) {
-      #features {
-        min-height: 200vh;
-        background-size: auto 100%;
-      }
+    .text-container {
+        padding-top: 170px;
+    }
 
-      .text-container {
-        padding-top: 150px;
-      }
+    .image-text {
+        margin: 12rem 0;
+    }
 
-      .image-text {
-        margin: 10rem 0;
-      }
-
-      .image-text h2 {
+    .image-text h2 {
         font-size: 1.5rem;
-      }
+    }
+}
+
+/* Media query para móviles */
+@media (max-width: 768px) {
+    #features {
+        height: 530vh;
+        background-size: auto 100%;
     }
 
-    /* Media query para móviles */
-    @media (max-width: 768px) {
-      #features {
-        min-height: 150vh;
-        background-size: auto 100%;
-      }
-
-      .text-container {
+    .text-container {
         padding-top: 120px;
-      }
+    }
 
-      .image-text h2 {
+    .image-text h2 {
         font-size: 1.2rem;
-      }
     }
 
-    /* Media query para pantallas muy pequeñas */
-    @media (max-width: 425px) {
-      .image-text h2 {
-        font-size: 1.5rem;
-      }
+    /* Mantener el video visible pero ajustar su tamaño */
+    #backgroundVideo {
+        top: 0; /* Asegurarse de que esté en la parte superior */
+        left: 50%;
+        width: 100%;
+        height: 120%;
+        object-fit: cover;
+        transform: translateX(-50%); /* Centrado horizontal */
     }
+
+    #features::after {
+        background-attachment: scroll; /* Cambiar a scroll en móviles para mejorar rendimiento */
+    }
+}
+
+/* Media query para pantallas muy pequeñas */
+@media (max-width: 425px) {
+    .image-text h2 {
+        font-size: 1.5rem;
+    }
+}

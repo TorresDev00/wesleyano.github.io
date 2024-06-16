@@ -138,6 +138,35 @@ $(document).ready(function() {
    });
 
 
+      const header = document.getElementById('header');
+      const footer = document.getElementById('ref-footer');
+      const icono = document.getElementById('icono')
+
+      window.addEventListener('scroll', () => {
+        // Verificar si el ancho de la ventana es menor a 768 píxeles
+        if (window.innerWidth < 768) {
+          // Obtener la posición del footer con respecto a la parte superior de la página
+          const footerTop = footer.getBoundingClientRect().top + window.scrollY;
+
+          // Obtener la altura del viewport
+          const viewportHeight = window.innerHeight;
+
+          // Verificar si el scrollY + altura del viewport ha alcanzado o pasado el footer
+          if (window.scrollY + viewportHeight > footerTop) {
+            header.classList.add('header-scrolled');
+            icono.style.color = '#000'; 
+          } else {
+            header.classList.remove('header-scrolled');
+            icono.style.color = '#fff'; 
+          }
+        } else {
+          // Asegurarse de que la clase se elimine si el ancho de la ventana es mayor o igual a 768 píxeles
+          header.classList.remove('header-scrolled');
+        }
+      });
+
+
+
   /**
    * Animation on scroll
    */
