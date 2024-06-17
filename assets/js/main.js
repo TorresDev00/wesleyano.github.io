@@ -83,13 +83,13 @@
     const headerScrolled = () => {
       if (window.scrollY > 100) {
         selectHeader.classList.add('header-scrolled');
-        selectImg.src = 'assets/img/Wesleyano/logo_4.png'
+        selectImg.src = 'assets/img/Wesleyano/logo_4.svg'
         selectNavItems.forEach(item => {
           item.classList.remove('colorLi');
         });
       } else {
         selectHeader.classList.remove('header-scrolled');
-        selectImg.src = 'assets/img/Wesleyano/logo_7.png'
+        selectImg.src = 'assets/img/Wesleyano/logo_7.svg'
         selectNavItems.forEach(item => {
           item.classList.add('colorLi');
         });

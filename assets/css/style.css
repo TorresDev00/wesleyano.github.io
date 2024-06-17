@@ -9,19 +9,15 @@
   /* Ruta donde se encuentra el archivo .otf */
 }
 
-@font-face {
+/* @font-face {
   font-family: 'monserrat-black';
-  /* Nombre que se le dará a la fuente */
   src: url('../font-family/Montserrat-Black.otf') format('opentype');
-  /* Ruta donde se encuentra el archivo .otf */
-}
+} */
 
-@font-face {
+/* @font-face {
   font-family: 'khavi-regular';
-  /* Nombre que se le dará a la fuente */
   src: url('../font-family/Khavi-Regular.otf') format('opentype');
-  /* Ruta donde se encuentra el archivo .otf */
-}
+} */
 
 @font-face {
   font-family: 'monserrat-BlackItalic';
@@ -31,12 +27,10 @@
 }
 
 
-@font-face {
+/* @font-face {
   font-family: 'montserrat-ExtraBold';
-  /* Nombre que se le dará a la fuente */
   src: url('../font-family/Montserrat-ExtraBold.otf') format('opentype');
-  /* Ruta donde se encuentra el archivo .otf */
-}
+} */
 
 
 @font-face {
@@ -47,12 +41,10 @@
 }
 
 
-@font-face {
+/* @font-face {
   font-family: 'montserrat-Thin';
-  /* Nombre que se le dará a la fuente */
   src: url('../font-family/Montserrat-Thin.ttf') format('truetype');
-  /* Ruta donde se encuentra el archivo .ttf */
-}
+} */
 
 
 @font-face {
@@ -494,9 +486,9 @@ h6 {
 }
 
 #hero .btn-get-started {
-  font-size: 36px;
+  font-size: 34px;
   display: inline-block;
-  padding: 4px 0;
+  padding: 6px 0;
   border-radius: 50px;
   transition: 0.3s ease-in-out;
   margin: 10px;
@@ -1582,7 +1574,7 @@ section {
 }
 
 .contact .info-box i {
-  font-size: 32px;
+  font-size: 28px;
   color: #2030bb;
   border-radius: 50%;
   padding: 8px;
@@ -1735,7 +1727,7 @@ section {
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
   color: #f8f9fa;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1;
 }
 

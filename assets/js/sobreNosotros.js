@@ -79,7 +79,7 @@ $('#buttonStyle').change(function() {
     selectImg.css('transition', 'opacity 0.5s'); // Agregar transición de 0.5 segundos
     selectImg.css('opacity', '0');
     setTimeout(function() {
-      selectImg.attr('src', 'assets/img/Wesleyano/logo_4.png');
+      selectImg.attr('src', 'assets/img/Wesleyano/logo_4.svg');
       selectImg.css('opacity', '1');
     }, 200);
   }else{
@@ -125,7 +125,7 @@ $('#buttonStyle').change(function() {
     selectImg.css('transition', 'opacity 0.5s'); // Agregar transición de 0.5 segundos
     selectImg.css('opacity', '0');
     setTimeout(function() {
-      selectImg.attr('src', 'assets/img/Wesleyano/logo_7.png');
+      selectImg.attr('src', 'assets/img/Wesleyano/logo_7.svg');
       selectImg.css('opacity', '1');
     }, 200);
   }
