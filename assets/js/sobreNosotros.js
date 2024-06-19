@@ -62,6 +62,7 @@ $('#buttonStyle').change(function() {
     $('.sobreNosotros .section-change').css('background-color', '#fff');
     $('.sobreNosotros .p-3').css('color', '#000');
     $('.sobreNosotros .p-4').css('color', '#000');
+    $('.perfil h4').css('color', '#000');
     cambioLight();
     $('.footer').css('background', '#ffe600');
     $('.footer').css('color', '#000');
@@ -107,6 +108,7 @@ $('#buttonStyle').change(function() {
     $('.sobreNosotros h3').css('color', '#fff');
     $('.sobreNosotros h4').css('color', '#fff');
     $('.sobreNosotros p').css('color', '#fff');
+    $('.perfil h4').css('color', '#fff');
     $('.sobreNosotros .section-change').css('background-color', '#000');
     cambioDark();
     $('.footer').css('background', '#101010');
@@ -157,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     var images = [];
     for (var i = 1; i <= 44; i++) {
-        images.push('assets/img/stop motion/web-' + (i < 10 ? '0' : '') + i + '.png');
+        images.push('assets/img/stop motion/web-' + (i < 10 ? '0' : '') + i + '.webp');
     }
 
     $(window).scroll(function() {

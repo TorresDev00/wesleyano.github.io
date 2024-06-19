@@ -110,7 +110,7 @@ a {
 @media (max-width: 480px) {
     .imgSemwesvem {
         content: url('../img/gif_1.gif');
-        height: 5rem;
+        height: 3rem;
         transform: rotate(-10deg) scale(1.4);
     }
 }

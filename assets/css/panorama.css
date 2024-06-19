@@ -1,6 +1,11 @@
 /*--------------------------------------------------------------
     # General
     --------------------------------------------------------------*/
+body,
+html {
+
+    overflow-x: hidden;
+}
 
 .navbar a {
     color: #ffffffdb;
@@ -35,7 +40,7 @@
 #features {
     position: relative;
     width: 100%;
-    height: 450vh;
+    height: 360vh;
     overflow: hidden;
 }
 
@@ -95,13 +100,26 @@
 }
 
 .image-text h1 {
-    font-size: calc(1.375rem + 3.5vw);
-}
+    font-size: calc(1.7rem + 4vw);
+    text-transform: uppercase;
+    color: #68bfad; /* Color base verde azulado */
+    text-shadow:
+      0 1px 0 #a4d6c8, /* Tono más claro */
+      0 2px 0 #b6e9da,
+      0 3px 0 #c8fcf0,
+      0 4px 0 #d9fff9,
+      0 5px 0 #ecffff,
+      0 6px 0 #ffffff,
+      0 9px 0 #ffffff,
+      0 10px 0 #ffffff,
+      3px 10px 15px rgba(255, 255, 255, 0.2), /* Sombra suave para profundidad */
+      3px 10px 5px rgba(255, 255, 255, 0.4); /* Sombra más intensa para contraste */
+  }
 
 /* Media query para pantallas grandes */
 @media (min-width: 2000px) {
     #features {
-        height: 530vh;
+        height: 400vh;
     }
 
     .image-text {
@@ -116,7 +134,7 @@
 /* Media query para tablets */
 @media (max-width: 1500px) {
     #features {
-        min-height: 540vh;
+        min-height: 360vh;
         background-size: auto 100%;
     }
 }
@@ -124,7 +142,7 @@
 /* Media query para tablets */
 @media (max-width: 1023px) {
     #features {
-        min-height: 500vh;
+        min-height: 360vh;
         background-size: auto 100%;
     }
 
@@ -144,7 +162,7 @@
 /* Media query para móviles */
 @media (max-width: 768px) {
     #features {
-        height: 530vh;
+        height: 360vh;
     }
 
     .text-container {

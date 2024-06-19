@@ -33,7 +33,7 @@
 #features {
     position: relative;
     width: 100%;
-    height: 450vh;
+    height: 300vh;
     overflow: hidden;
 }
 
@@ -90,13 +90,26 @@
 }
 
 .image-text h1 {
-    font-size: calc(1.375rem + 3.5vw);
+    font-size: calc(1.7rem + 4vw);
+    text-transform: uppercase;
+    color: #b20000; /* Color base rojo oscuro */
+    text-shadow:
+      0 1px 0 #910000, /* Tono más oscuro */
+      0 2px 0 #820000,
+      0 3px 0 #730000,
+      0 4px 0 #640000,
+      0 5px 0 #550000,
+      0 6px 0 #460000,
+      0 9px 0 #370000,
+      0 10px 0 #280000,
+      3px 10px 15px rgba(0, 0, 0, 0.2), /* Sombra suave para profundidad */
+      3px 10px 5px rgba(0, 0, 0, 0.4); /* Sombra más intensa para contraste */
 }
 
 /* Media query para pantallas grandes */
 @media (min-width: 2000px) {
     #features {
-        height: 530vh;
+        height: 320vh;
     }
 
     .image-text {
@@ -111,7 +124,7 @@
 /* Media query para tablets */
 @media (max-width: 1500px) {
     #features {
-        min-height: 500vh;
+        min-height: 300vh;
         background-size: auto 100%;
     }
 }
@@ -119,7 +132,7 @@
 /* Media query para tablets */
 @media (max-width: 1023px) {
     #features {
-        min-height: 400vh;
+        min-height: 300vh;
         background-size: auto 100%;
     }
 
@@ -139,7 +152,7 @@
 /* Media query para móviles */
 @media (max-width: 768px) {
     #features {
-        height: 530vh;
+        height: 300vh;
         background-size: auto 100%;
     }
 
