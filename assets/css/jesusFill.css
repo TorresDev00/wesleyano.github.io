@@ -33,7 +33,7 @@
 #features {
     position: relative;
     width: 100%;
-    height: 300vh;
+    height: 380vh;
     overflow: hidden;
 }
 
@@ -109,7 +109,7 @@
 /* Media query para pantallas grandes */
 @media (min-width: 2000px) {
     #features {
-        height: 320vh;
+        height: 410vh;
     }
 
     .image-text {
@@ -124,7 +124,7 @@
 /* Media query para tablets */
 @media (max-width: 1500px) {
     #features {
-        min-height: 300vh;
+        min-height: 400vh;
         background-size: auto 100%;
     }
 }
@@ -132,7 +132,7 @@
 /* Media query para tablets */
 @media (max-width: 1023px) {
     #features {
-        min-height: 300vh;
+        min-height: 390vh;
         background-size: auto 100%;
     }
 
@@ -152,7 +152,7 @@
 /* Media query para móviles */
 @media (max-width: 768px) {
     #features {
-        height: 300vh;
+        height: 370vh;
         background-size: auto 100%;
     }
 

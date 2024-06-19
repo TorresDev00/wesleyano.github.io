@@ -40,7 +40,7 @@ html {
 #features {
     position: relative;
     width: 100%;
-    height: 360vh;
+    height: 480vh;
     overflow: hidden;
 }
 
@@ -119,7 +119,7 @@ html {
 /* Media query para pantallas grandes */
 @media (min-width: 2000px) {
     #features {
-        height: 400vh;
+        height: 500vh;
     }
 
     .image-text {
@@ -134,7 +134,7 @@ html {
 /* Media query para tablets */
 @media (max-width: 1500px) {
     #features {
-        min-height: 360vh;
+        min-height: 480vh;
         background-size: auto 100%;
     }
 }
@@ -142,7 +142,7 @@ html {
 /* Media query para tablets */
 @media (max-width: 1023px) {
     #features {
-        min-height: 360vh;
+        min-height: 480vh;
         background-size: auto 100%;
     }
 
@@ -162,7 +162,7 @@ html {
 /* Media query para móviles */
 @media (max-width: 768px) {
     #features {
-        height: 360vh;
+        height: 480vh;
     }
 
     .text-container {

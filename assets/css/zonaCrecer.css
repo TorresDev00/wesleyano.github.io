@@ -44,7 +44,7 @@
    #features {
        position: relative;
        width: 100%;
-       height: 450vh;
+       height: 550vh;
        overflow: hidden;
    }
 
@@ -142,7 +142,7 @@
    /* Media query para pntallas medianas */
    @media (max-width: 1500px) {
        #features {
-           min-height: 250vh;
+           min-height: 300vh;
            background-size: auto 100%;
        }
    }
@@ -150,7 +150,7 @@
    /* Media query para tablets */
    @media (max-width: 1023px) {
        #features {
-           min-height: 250vh;
+           min-height: 300vh;
            background-size: auto 100%;
        }
 
@@ -170,7 +170,7 @@
    /* Media query para móviles */
    @media (max-width: 768px) {
        #features {
-           height: 250vh;
+           height: 560vh;
            background-size: auto 100%;
        }
 
