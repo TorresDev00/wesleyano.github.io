@@ -977,6 +977,12 @@ section {
   }
 }
 
+@media (min-width: 2500px) {
+  .programasAliados {
+    padding: 20rem 20rem !important;
+  }
+}
+
 
 
 /*--------------------------------------------------------------
@@ -1596,6 +1602,15 @@ section {
 }
 
 
+ @media (min-width: 1400px) {
+  .contactos {
+    margin-top: calc(10em + 3rem) !important;
+  }
+}
+
+
+
+
 .btn-color {
   background: #170c66;
   color: #ffffff;
@@ -1762,10 +1777,28 @@ section {
   padding-top: 30px;
 }
 
-
-@media (min-width: 2100x) {
+@media (min-width: 1400px) {
   .fit {
-    margin-top: calc(10em + 15rem);
+    margin-top: calc(10em + 10rem) !important;
+  }
+}
+
+
+@media (min-width: 2100px) {
+  .fit {
+    margin-top: calc(10em + 15rem) !important;
+  }
+}
+
+@media (min-width: 2300px) {
+  .fit {
+    margin-top: calc(15em + 15rem) !important;
+  }
+}
+
+@media (min-width: 2500px) {
+  .fit {
+    margin-top: calc(18em + 50rem) !important;
   }
 }
 

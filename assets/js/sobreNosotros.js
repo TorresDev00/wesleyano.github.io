@@ -159,11 +159,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     var images = [];
     for (var i = 1; i <= 44; i++) {
-        images.push('assets/img/stop motion/Web-' + (i < 10 ? '0' : '') + i + '.webp');
+       let imageUrl  = 'assets/img/stop motion/Web-' + (i < 10 ? '0' : '') + i + '.webp';
+       images.push(new Image().src = imageUrl);
+
     }
 
-    $(window).scroll(function() {
-        var scrollPos = $(this).scrollTop();
+    function updateProfileImage() {
+        var scrollPos = $(window).scrollTop();
         var startPerfilTop = $('.start-perfil').offset().top;
         var footerTop = $('#footer').offset().top;
 
@@ -171,8 +173,19 @@ document.addEventListener('DOMContentLoaded', () => {
             var index = Math.floor((scrollPos - startPerfilTop) / (footerTop - startPerfilTop) * images.length);
             $('#profile-image').attr('src', images[index]);
         }
-    });
+    }
 
+    // Llamar a updateProfileImage en cada frame de animación
+    function animate() {
+        requestAnimationFrame(animate);
+        updateProfileImage();
+    }
+
+     animate();
+
+     $(window).on('resize', function() {
+        animate(); // Volver a iniciar la animación en caso de redimensionamiento de la ventana
+    });
 
 
 

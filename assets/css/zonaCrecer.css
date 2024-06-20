@@ -127,7 +127,7 @@
    /* Media query para pantallas grandes */
    @media (min-width: 2000px) {
        #features {
-           height: 280vh;
+           height: 300vh;
        }
 
        .image-text {
@@ -170,7 +170,7 @@
    /* Media query para móviles */
    @media (max-width: 768px) {
        #features {
-           height: 560vh;
+           height: 400vh;
            background-size: auto 100%;
        }
 
@@ -202,6 +202,10 @@
 
    /* Media query para pantallas muy pequeñas */
    @media (max-width: 425px) {
+    #features {
+           height: 470vh;
+           background-size: auto 100%;
+       }
        .image-text h2 {
            font-size: 1.5rem;
        }
