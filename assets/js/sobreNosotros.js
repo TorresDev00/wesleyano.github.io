@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     var images = [];
     for (var i = 1; i <= 44; i++) {
-        images.push('assets/img/stop motion/web-' + (i < 10 ? '0' : '') + i + '.webp');
+        images.push('assets/img/stop motion/Web-' + (i < 10 ? '0' : '') + i + '.webp');
     }
 
     $(window).scroll(function() {
