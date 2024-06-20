@@ -46,5 +46,74 @@
       swiper.slideNext();
     });
 
+
+     const imagesToPreload = [
+    '../assets/img/pensum/herramientaDeInterpretacion.webp',
+    '../assets/img/pensum/redaccionLectura.webp',
+    '../assets/img/pensum/familia.webp',
+    '../assets/img/pensum/informatica.webp',
+    '../assets/img/pensum/panoramaAntiguoTestamento.webp',
+    '../assets/img/pensum/herramientasInterpretacionPractica.webp',
+    '../assets/img/pensum/pentateuco.webp',
+    '../assets/img/pensum/panoramaDelNuevoTestamento.webp',
+    '../assets/img/pensum/espirituSanto.webp',
+    '../assets/img/pensum/jesus.webp',
+    '../assets/img/pensum/teologiaI.webp',
+    '../assets/img/pensum/cristologia.webp',
+    '../assets/img/pensum/misionologia.webp',
+    '../assets/img/pensum/emociones.webp',
+    '../assets/img/pensum/pedagogia.webp',
+    '../assets/img/pensum/librosHistoricos.webp',
+    '../assets/img/pensum/teologiaII.webp',
+    '../assets/img/pensum/oratoria.webp',
+    '../assets/img/pensum/historioDeLaIglesia.webp',
+    '../assets/img/pensum/eticaCristiana.webp',
+    '../assets/img/pensum/evangelismoPersonal.webp',
+    '../assets/img/pensum/homiletica.webp',
+    '../assets/img/pensum/misionIglesia.webp',
+    '../assets/img/pensum/consejeria.webp',
+    '../assets/img/pensum/adoración.webp',
+    '../assets/img/pensum/proyectoDeVida.webp',
+    '../assets/img/pensum/teologiaWesley.webp',
+    '../assets/img/pensum/movimientoMetodista.webp',
+    '../assets/img/pensum/apologetica.webp',
+    '../assets/img/pensum/santidad.webp',
+    '../assets/img/pensum/predicando.webp',
+    '../assets/img/pensum/gruposCelulares.webp',
+    '../assets/img/pensum/hechos.webp',
+    '../assets/img/pensum/ministerioPastoral.webp',
+    '../assets/img/pensum/dones.webp',
+    // Agrega aquí más imágenes que necesiten pre-carga
+  ];
+
+  imagesToPreload.forEach(src => {
+    const img = new Image();
+    img.src = src;
+  });
+
+  var lazyImages = [].slice.call(document.querySelectorAll('img.lazy'));
+  if ('IntersectionObserver' in window) {
+    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          let lazyImage = entry.target;
+          lazyImage.src = lazyImage.dataset.src;
+          lazyImage.classList.remove('lazy');
+          lazyImageObserver.unobserve(lazyImage);
+        }
+      });
+    });
+    lazyImages.forEach(function(lazyImage) {
+      lazyImageObserver.observe(lazyImage);
+    });
+  } else {
+    // Fallback para navegadores que no soportan IntersectionObserver
+    lazyImages.forEach(function(lazyImage) {
+      lazyImage.src = lazyImage.dataset.src;
+      lazyImage.classList.remove('lazy');
+    });
+  }
+
+
     
   });
