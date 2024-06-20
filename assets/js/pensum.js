@@ -14,6 +14,8 @@
       onlyInViewport: true
       },
       grabCursor: true,
+      mousewheel: true, // Habilita el desplazamiento con la rueda del ratón
+      touchRatio: 0.5, // Controla la sensibilidad del desplazamiento táctil
       breakpoints: {
         320: {
           slidesPerView: 1,

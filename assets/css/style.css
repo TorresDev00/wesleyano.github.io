@@ -1604,10 +1604,9 @@ section {
 
  @media (min-width: 1400px) {
   .contactos {
-    margin-top: calc(10em + 3rem) !important;
+    margin-top: calc(3em + 3rem) !important;
   }
 }
-
 
 
 
@@ -1779,14 +1778,14 @@ section {
 
 @media (min-width: 1400px) {
   .fit {
-    margin-top: calc(10em + 10rem) !important;
+    margin-top: calc(5em + 5rem) !important;
   }
 }
 
 
 @media (min-width: 2100px) {
   .fit {
-    margin-top: calc(10em + 15rem) !important;
+    margin-top: calc(10em + 10rem) !important;
   }
 }
 
