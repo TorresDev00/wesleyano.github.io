@@ -1791,13 +1791,13 @@ section {
 
 @media (min-width: 2300px) {
   .fit {
-    margin-top: calc(15em + 12rem) !important;
+    margin-top: calc(10em + 10rem) !important;
   }
 }
 
 @media (min-width: 2500px) {
   .fit {
-    margin-top: calc(15em + 12rem) !important;
+    margin-top: calc(10em + 10rem) !important;
   }
 }
 
