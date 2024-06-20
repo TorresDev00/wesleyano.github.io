@@ -40,7 +40,7 @@ html {
 #features {
     position: relative;
     width: 100%;
-    height: 480vh;
+    height: 320vh;
     overflow: hidden;
 }
 
@@ -162,7 +162,7 @@ html {
 /* Media query para móviles */
 @media (max-width: 768px) {
     #features {
-        height: 480vh;
+        height: 330vh;
     }
 
     .text-container {
@@ -195,6 +195,11 @@ html {
 
 /* Media query para pantallas muy pequeñas */
 @media (max-width: 425px) {
+    #features {
+       min-height: 320vh;
+       background-size: auto 100%;
+    }
+
     .image-text h2 {
         font-size: 1.5rem;
     }

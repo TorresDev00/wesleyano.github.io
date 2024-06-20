@@ -826,7 +826,6 @@ section {
 
 .services .icon-box-white .title a,
 .services .icon-box-white .description {
-  font-family: 'montserrat-ExtraLightItalic';
   color: #000;
 }
 
@@ -836,7 +835,6 @@ section {
 
 .services .icon-box-yellow .title a,
 .services .icon-box-yellow .description {
-  font-family: 'montserrat-ExtraLightItalic';
   color: #000;
 }
 
@@ -846,7 +844,6 @@ section {
 
 .services .icon-box-black .title a,
 .services .icon-box-black .description {
-  font-family: 'montserrat-ExtraLightItalic';
   color: #fff;
 }
 
