@@ -196,11 +196,12 @@ html {
 /* Media query para pantallas muy pequeñas */
 @media (max-width: 425px) {
     #features {
-       min-height: 320vh;
+       min-height: 400vh;
        background-size: auto 100%;
     }
 
     .image-text h2 {
         font-size: 1.5rem;
+        margin: 0 10px 0 10px;
     }
 }
