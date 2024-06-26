@@ -208,5 +208,6 @@
        }
        .image-text h2 {
            font-size: 1.5rem;
+           margin: 0 10px 0 10px;
        }
    }
